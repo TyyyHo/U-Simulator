@@ -1,0 +1,42 @@
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+
+    .portContainer {
+        top: 6%;
+        left: 3%;
+    }
+
+    .infoBar {
+        width: 40%;
+        left: 30%;
+
+        input {
+            width: 60%;
+        }
+    }
+
+}
+
+//RWD (for width is between 1000 to 1100)
+@media only screen and (max-width: 1101px) {
+
+    .portContainer {
+        top: 8%;
+        left: 1%;
+    }
+
+}
+
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+    .portContainer {
+        top: 7%;
+        left: 3%;
+    }
+
+    .infoBar {
+        width: 60%;
+        left: 20%;
+    }
+}

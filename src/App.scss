@@ -1,0 +1,28 @@
+html,
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(48, 46, 49);
+  color: white;
+
+  // firefox滾動卷軸隱藏
+  scrollbar-width: none;
+
+  // Chrome/Edge滾動卷軸隱藏
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+//RWD (width is higher than 412, lower than 1280)
+// @media only screen and (max-width: 1250px) {}
+
+
+//RWD (width is lower than 412)
+// @media only screen and (max-width: 420px) {}

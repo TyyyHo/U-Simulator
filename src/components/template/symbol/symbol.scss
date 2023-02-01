@@ -1,0 +1,44 @@
+.symbolContainer {
+    height: 600px;
+    width: 720px;
+
+    .symbol {
+        max-width: 6.944%;
+        max-height: 8.333%;
+        position: absolute;
+        border-radius: 50%;
+        padding: 3px;
+
+
+        .symbolImg {
+            width: 100%;
+            height: 100%;
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
+
+    .false {
+        cursor: default;
+        border: 2px solid rgb(170, 170, 170);
+
+        path {
+            fill: rgb(130, 130, 130);
+        }
+    }
+
+    .available {
+        cursor: pointer;
+        border: 3px solid #a2dde2;
+    }
+
+    .true {
+        cursor: pointer;
+        border: 4px solid #a2dde2;
+
+        path {
+            fill: #FFC847;
+        }
+
+    }
+}

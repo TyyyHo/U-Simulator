@@ -1,0 +1,17 @@
+export const symbolList = [
+  "I",
+  "II",
+  "III",
+  "IV",
+  "V",
+  "VI",
+  "VII",
+  "VIII",
+  "IX",
+  "專精-I",
+  "專精-II",
+  "專精-III",
+  "專精-IV",
+  "專精-V",
+  "專精-VI",
+];

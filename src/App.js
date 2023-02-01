@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Simulator from "./page/simulator";
+import Waiting from "./page/waiting";
+
+import { defaultDotState } from "./dotState";
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+import { firebase } from "./firebaseConfig";
 
 function App() {
+  firebase(initializeApp, getAnalytics);
+  const [dotState, setDotState] = useState(defaultDotState);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route
+              index
+              element={
+                <Simulator dotState={dotState} setDotState={setDotState} />
+              }
+            />
+            {/* <Route path={`:importStr`} element={<Navigate to="/" />} /> */}
+            <Route
+              path={`:importStr`}
+              element={<Waiting setDotState={setDotState} />}
+            />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

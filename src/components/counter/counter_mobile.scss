@@ -1,0 +1,36 @@
+//RWD (width is higher than 1280, lower than 1800)
+@media only screen and (max-width: 1800px) {
+    .counter {
+        top: 2%;
+        left: 27%;
+    }
+}
+
+
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    .counter {
+        top: 0%;
+        left: 3%;
+    }
+}
+
+
+//RWD (for width is between 1000 to 1100)
+@media only screen and (max-width: 1101px) {
+
+    .counter {
+        top: 8%;
+        left: 24%;
+    }
+
+}
+
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+    .counter {
+        top: 15%;
+        left: 3%;
+    }
+}

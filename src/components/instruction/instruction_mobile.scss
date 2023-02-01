@@ -1,0 +1,137 @@
+//RWD (width is higher than 1280, lower than 1800)
+@media only screen and (max-width: 1800px) {
+    .instruction {
+
+        .instructionText {
+            .sContainer {
+                font-size: small;
+            }
+
+            .dContainer {
+                font-size: small;
+            }
+
+        }
+
+
+    }
+}
+
+
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    .instruction {
+
+        .instructionText {
+            // padding: 25px 20px;
+            font-size: larmedger;
+            width: 90%;
+            max-height: 60%;
+            left: 3.5%;
+            top: 15%;
+
+            .sContainer {
+                font-size: small;
+
+                .symbol {
+                    width: 140px;
+
+                }
+
+            }
+
+            .dContainer {
+                font-size: small;
+
+                .dot {
+                    width: 140px;
+                }
+            }
+
+        }
+    }
+}
+
+
+//RWD (for width is between 1000 to 1100)
+@media only screen and (max-width: 1101px) {
+
+    .instruction {
+
+        .instructionText {
+            width: 90%;
+            max-height: 60%;
+            left: 3.5%;
+            top: 15%;
+
+            .sContainer {
+                font-size: small;
+
+                .symbol {
+                    width: 140px;
+
+                }
+
+            }
+
+            .dContainer {
+                font-size: small;
+
+                .dot {
+                    width: 140px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+    .instruction {
+
+        img {
+            top: 20px;
+            right: 20px;
+        }
+
+
+        .instructionText {
+            width: 80%;
+            max-height: 80%;
+            left: 7%;
+            top: 10%;
+
+            .sContainer {
+                margin-left: 10%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-size: medium;
+
+                .symbol {
+                    width: 60%;
+                    margin: 3px 0;
+                }
+
+            }
+
+            .dContainer {
+                margin-left: 10%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-size: medium;
+
+                .dot {
+                    width: 60%;
+                    margin: -1px 0;
+                }
+            }
+
+        }
+    }
+}

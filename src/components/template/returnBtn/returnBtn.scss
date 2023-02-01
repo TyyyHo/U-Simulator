@@ -1,0 +1,23 @@
+#returnBtn {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(122, 224, 207);
+    padding: 5px 5px;
+    transition-duration: 0.75s;
+    cursor: pointer;
+
+    .arrow {
+        fill: black;
+    }
+
+    &:hover {
+        transform: translate(-3px, -3px);
+        width: 46px;
+        height: 46px;
+    }
+
+}

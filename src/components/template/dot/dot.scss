@@ -1,0 +1,142 @@
+.dotContainer {
+    height: 800px;
+    width: 1200px;
+    // height: 600px;
+    // width: 900px;
+
+    .noteText {
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 25%;
+        z-index: 15;
+        background-color: rgb(121, 121, 121);
+        border: 2px solid rgb(122, 224, 207);
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+
+        .remark {
+            color: black;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        div {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        div:first-child {
+            padding-top: 8px;
+        }
+
+        div:last-child {
+            padding-bottom: 9px;
+        }
+
+    }
+
+    .isPointer {
+        cursor: pointer;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .dot {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 13%;
+        z-index: 10;
+
+        .dotImg {
+            max-width: 40%;
+            max-height: 35px;
+        }
+
+        .text_container {
+
+            .text {
+                padding: 0 6px;
+                font-size: 14px;
+            }
+        }
+
+        .chosen {
+            cursor: pointer;
+            transform: scale(1.1, 1.1);
+            transition-duration: 0.1s;
+
+            .star {
+                fill: #FFC847;
+            }
+
+            .insideStar {
+                fill: rgb(80, 80, 80);
+            }
+
+            .circle {
+                fill: #1e7973
+            }
+        }
+
+        .available {
+            cursor: pointer;
+            transition-duration: 0.1s;
+
+            .star {
+                fill: #fccf67;
+            }
+
+            .insideStar {
+                fill: rgb(114, 114, 114);
+                opacity: 0.8;
+            }
+
+            .circle {
+                fill: rgb(100, 93, 55);
+                opacity: 0.8;
+            }
+
+            &:hover {
+
+                .star {
+                    opacity: 1;
+                }
+
+                .circle,
+                .insideStar {
+                    opacity: 1;
+                }
+
+                .insideStar {
+                    fill: rgb(80, 80, 80);
+                }
+            }
+        }
+
+        .unavailable {
+
+            .star {
+                fill: lightgray;
+            }
+
+            .insideStar {
+                fill: rgb(80, 80, 80);
+                opacity: 0.2;
+            }
+
+            .circle {
+                fill: rgb(80, 80, 80);
+                opacity: 0.3;
+            }
+        }
+    }
+
+}

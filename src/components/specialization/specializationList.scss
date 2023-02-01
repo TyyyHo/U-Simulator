@@ -1,0 +1,48 @@
+.spContainer {
+    position: fixed;
+    margin-bottom: 4px;
+    bottom: 42px;
+    width: 60%;
+    margin-left: 20%;
+
+    .specializationList {
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(../../../public/img/listBg/listBg.jpg);
+        background-size: 50%;
+        font-size: larger;
+        font-weight: 600;
+        color: black;
+
+        div:first-child {
+            border-left: 2px solid;
+            border-color: black;
+        }
+
+        .specializationOption {
+            border-right: 2px solid;
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            border-color: black;
+            width: 16.6%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        .available {
+            cursor: pointer;
+
+            &:hover {
+                // background-color: rgb(255, 196, 196);
+                background-color: rgb(122, 224, 207);
+            }
+        }
+    }
+}
