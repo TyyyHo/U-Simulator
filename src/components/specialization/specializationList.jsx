@@ -9,15 +9,16 @@ const SpecializationList = ({
   dotState,
   zodiacLimit,
   spLimit,
+  setAlertMsg,
 }) => {
   const specializationOption = Object.keys(SpSymbolData);
 
   function spRule(target) {
     if (spLimit === 0) {
-      return zodiacLimit >= 22 ? "available" : null;
+      return zodiacLimit >= 22 ? "available" : "underThreshold";
     }
     const firstSymbol = SpSymbolData[target].symbol[0];
-    return dotState[firstSymbol].dot1 === true ? "available" : null;
+    return dotState[firstSymbol].dot1 === true ? "available" : "spIsUnique";
   }
 
   return (
@@ -29,12 +30,18 @@ const SpecializationList = ({
               className={`specializationOption ${spRule(item)}`}
               key={index}
               onClick={() => {
-                spRule(item) === "available"
-                  ? setTemplate(item)
-                  : console.log("專精僅能選擇一類");
+                if (spRule(item) === "available") {
+                  setTemplate(item);
+                }
+                if (spRule(item) === "underThreshold") {
+                  setAlertMsg("至少需配置22點特性才能選擇專精");
+                }
+                if (spRule(item) === "spIsUnique") {
+                  setAlertMsg("專精只能選擇一種");
+                }
               }}
             >
-              {item}
+              <span>{item}</span>
             </div>
           );
         })}

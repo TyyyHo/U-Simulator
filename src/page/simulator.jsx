@@ -6,9 +6,11 @@ import CommonList from "../components/common/commonList";
 import Port from "../components/port/port";
 import Counter from "../components/counter/counter";
 import Instruction from "../components/instruction/instruction";
+import Alert from "../components/alert/alert";
 
 function Simulator({ dotState, setDotState }) {
   const [template, setTemplate] = useState("I");
+  const [alertMsg, setAlertMsg] = useState("");
   const [zodiacLimit, setZodiacLimit] = useState(0);
   const [spLimit, setSpLimit] = useState(0);
 
@@ -54,8 +56,13 @@ function Simulator({ dotState, setDotState }) {
         dotState={dotState}
         zodiacLimit={zodiacLimit}
         spLimit={spLimit}
+        setAlertMsg={setAlertMsg}
       />
-      <CommonList setTemplate={setTemplate} zodiacLimit={zodiacLimit} />
+      <CommonList
+        setTemplate={setTemplate}
+        zodiacLimit={zodiacLimit}
+        setAlertMsg={setAlertMsg}
+      />
       <Port
         setTemplate={setTemplate}
         dotState={dotState}
@@ -65,6 +72,7 @@ function Simulator({ dotState, setDotState }) {
       />
       <Counter zodiacLimit={zodiacLimit} />
       <Instruction />
+      <Alert alertMsg={alertMsg} setAlertMsg={setAlertMsg} />
     </div>
   );
 }

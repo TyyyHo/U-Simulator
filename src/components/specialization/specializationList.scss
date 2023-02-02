@@ -15,7 +15,7 @@
         background-size: 50%;
         font-size: larger;
         font-weight: 600;
-        color: black;
+        color: rgba(0, 0, 0, 0.5);
 
         div:first-child {
             border-left: 2px solid;
@@ -38,10 +38,15 @@
 
         .available {
             cursor: pointer;
+            color: black;
 
             &:hover {
-                // background-color: rgb(255, 196, 196);
-                background-color: rgb(122, 224, 207);
+               
+                span {
+                    transform: scale(1.1, 1.1);
+                    transition-duration: 0.1s;
+                }
+                // background-color: rgb(122, 224, 207);
             }
         }
     }

@@ -1,0 +1,41 @@
+.alert {
+    // 底色、外框
+    background-color: rgb(110, 110, 110);
+    border: 2px solid rgb(122, 224, 207);
+    border-radius: 15px;
+
+    // 排版&位置
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: -1;
+    padding: 1% 1.5%;
+    opacity: 0;
+
+    // 文字
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+
+// 動畫
+.active {
+    z-index: 100;
+    animation-name: showUp;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes showUp {
+    0% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: 0;}
+}

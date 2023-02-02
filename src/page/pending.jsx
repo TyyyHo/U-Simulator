@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 
 import { defaultDotState } from "../dotState";
 
-const Waiting = ({ setDotState }) => {
+const Pending = ({ setDotState }) => {
   // 抓取參數
   let { importStr } = useParams();
 
@@ -28,10 +28,10 @@ const Waiting = ({ setDotState }) => {
 
   return (
     <div>
-      waiting
+      Pending
       {<Navigate to="/" />}
     </div>
   );
 };
 
-export default Waiting;
+export default Pending;

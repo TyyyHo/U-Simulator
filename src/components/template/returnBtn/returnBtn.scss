@@ -2,10 +2,12 @@
     position: absolute;
     top: 2%;
     left: 4%;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     border-radius: 5px;
-    background-color: rgb(122, 224, 207);
+    // background-color: rgb(122, 224, 207);
+    background-color: #76dbcc;
+    border: 2px solid rgb(20, 151, 138);
     padding: 5px 5px;
     transition-duration: 0.75s;
     cursor: pointer;

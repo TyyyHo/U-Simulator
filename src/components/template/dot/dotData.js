@@ -2197,6 +2197,7 @@ export const dotData = {
     previous: "專精-III",
     id: "黑暗",
     dotType: "sp",
+    spClass: 1,
     dot: [
       { text: ["防禦度+5%", "防護罩+5%"], connectDot: ["startingPoint"] },
       { text: ["僕從傷害+15%"], connectDot: ["1", "3"] },
@@ -2239,6 +2240,7 @@ export const dotData = {
     previous: "專精-III",
     id: "斯特拉",
     dotType: "sp",
+    spClass: 2,
     dot: [
       { text: ["傷害+8%", "僕從傷害+8%"], connectDot: ["startingPoint"] },
       { text: ["僕從敏銳效果+15%"], connectDot: ["1", "3"] },
@@ -2312,6 +2314,7 @@ export const dotData = {
     previous: "專精-III",
     id: "垂釣者",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["防禦度+5%", "防護罩+5%"], connectDot: ["startingPoint"] },
       { text: ["每秒魔力復甦+15%"], connectDot: ["1", "3"] },
@@ -2369,6 +2372,7 @@ export const dotData = {
     previous: "專精-III",
     id: "帆船",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["僕從傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["僕從生命力+7%"], connectDot: ["1", "3"] },
@@ -2440,6 +2444,7 @@ export const dotData = {
     previous: "專精-IV",
     id: "光輝",
     dotType: "sp",
+    spClass: 1,
     dot: [
       { text: ["元素傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["元素傷害+15%"], connectDot: ["1", "3"] },
@@ -2488,6 +2493,7 @@ export const dotData = {
     previous: "專精-IV",
     id: "真空",
     dotType: "sp",
+    spClass: 2,
     dot: [
       { text: ["元素傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["醒悟效果+15%"], connectDot: ["1", "3"] },
@@ -2540,6 +2546,7 @@ export const dotData = {
     previous: "專精-IV",
     id: "瀑布",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["元素傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["元素傷害+15%"], connectDot: ["1", "3"] },
@@ -2580,6 +2587,7 @@ export const dotData = {
     previous: "專精-IV",
     id: "海盜",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["狀態發生異常指數+2"], connectDot: ["startingPoint"] },
       { text: ["每秒魔力復甦+15%"], connectDot: ["1", "3"] },
@@ -2615,6 +2623,7 @@ export const dotData = {
     previous: "專精-V",
     id: "卡斯波爾",
     dotType: "sp",
+    spClass: 1,
     dot: [
       {
         text: ["攻擊時，傷害+15%", "弩傷害+15%"],
@@ -2675,6 +2684,7 @@ export const dotData = {
     previous: "專精-V",
     id: "後悔",
     dotType: "sp",
+    spClass: 2,
     dot: [
       { text: ["投射體傷害+15%", "弩傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["敏銳效果+15%"], connectDot: ["1", "3"] },
@@ -2741,6 +2751,7 @@ export const dotData = {
     previous: "專精-V",
     id: "燈火",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["投射體傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["瞄準力效果+30%"], connectDot: ["1", "3"] },
@@ -2797,6 +2808,7 @@ export const dotData = {
     previous: "專精-V",
     id: "火爐",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["生命力+20", "弩傷害+8%"], connectDot: ["startingPoint"] },
       { text: ["近距射擊效果+10%"], connectDot: ["1", "3"] },
@@ -2863,6 +2875,7 @@ export const dotData = {
     previous: "專精-VI",
     id: "陰影",
     dotType: "sp",
+    spClass: 1,
     dot: [
       { text: ["傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["持續傷害+15%"], connectDot: ["1", "3"] },
@@ -2902,6 +2915,7 @@ export const dotData = {
     previous: "專精-VI",
     id: "慾望",
     dotType: "sp",
+    spClass: 2,
     dot: [
       { text: ["傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["持續傷害+15%"], connectDot: ["1", "3"] },
@@ -2950,6 +2964,7 @@ export const dotData = {
     previous: "專精-VI",
     id: "迦尼達",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["攻擊暴擊度+15%"], connectDot: ["1", "3"] },
@@ -2994,6 +3009,7 @@ export const dotData = {
     previous: "專精-VI",
     id: "小溪",
     dotType: "sp",
+    spClass: 3,
     dot: [
       { text: ["元素傷害+15%"], connectDot: ["startingPoint"] },
       { text: ["元素傷害+15%"], connectDot: ["1", "3"] },

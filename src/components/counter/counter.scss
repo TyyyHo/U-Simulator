@@ -1,9 +1,11 @@
 .counter {
-    position: fixed;
+    position: absolute;
     top: 2%;
     left: 21%;
-    background-color: rgb(11, 192, 162);
-    border: 3px solid rgb(3, 102, 92);
+    // background-color: rgb(11, 192, 162);
+    // border: 3px solid rgb(3, 102, 92);
+    background-color: #76dbcc;
+    border: 3px solid rgb(20, 151, 138);
     border-radius: 5px;
     padding: 0px 20px;
     height: 40px;

@@ -4,7 +4,7 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Simulator from "./page/simulator";
-import Waiting from "./page/waiting";
+import Pending from "./page/pending";
 
 import { defaultDotState } from "./dotState";
 
@@ -29,10 +29,9 @@ function App() {
                 <Simulator dotState={dotState} setDotState={setDotState} />
               }
             />
-            {/* <Route path={`:importStr`} element={<Navigate to="/" />} /> */}
             <Route
               path={`:importStr`}
-              element={<Waiting setDotState={setDotState} />}
+              element={<Pending setDotState={setDotState} />}
             />
           </Route>
         </Routes>
