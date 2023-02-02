@@ -1,5 +1,5 @@
 .instruction {
-    z-index: 100;
+    
 
     img {
         position: absolute;
@@ -15,6 +15,7 @@
     // }
 
     .instructionText {
+        z-index: 100;
         overflow: scroll;
         cursor: pointer;
         padding: 2% 20px 2% 0%;
