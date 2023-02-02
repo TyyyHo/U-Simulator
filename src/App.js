@@ -14,6 +14,8 @@ import { getAnalytics } from "firebase/analytics";
 
 import { firebase } from "./firebaseConfig";
 
+
+
 function App() {
   firebase(initializeApp, getAnalytics);
   const [dotState, setDotState] = useState(defaultDotState);

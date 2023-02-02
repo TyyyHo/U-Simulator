@@ -8,11 +8,11 @@
         width: 40px;
         height: 40px;
         cursor: pointer;
-    }
 
-    // .rwdContainer {
-    //     overflow: scroll;
-    // }
+        &:active {
+            transform: translate(1px, 2px);
+        }
+    }
 
     .instructionText {
         z-index: 100;

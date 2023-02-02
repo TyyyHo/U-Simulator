@@ -22,4 +22,9 @@
         height: 46px;
     }
 
+    &:active {
+        transform: translate(1px, 2px);
+        transition-duration: 0.25s;
+    }
+
 }
