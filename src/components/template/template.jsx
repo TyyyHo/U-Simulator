@@ -1,4 +1,3 @@
-import React from "react";
 import "./template.scss";
 import "./template_mobile.scss";
 
@@ -14,12 +13,11 @@ const Template = ({
   setTemplate,
   dotState,
   setDotState,
-  zodiacLimit,
-  setZodiacLimit,
-  spLimit,
-  setSpLimit,
+  zodiacPoints,
+  setZodiacPoint,
+  spPoints,
+  setSpPoints
 }) => {
-
   // isDot
   let isSymbol = symbolList.some((element) => element === template);
 
@@ -33,8 +31,8 @@ const Template = ({
               template={template}
               setTemplate={setTemplate}
               dotState={dotState}
-              zodiacLimit={zodiacLimit}
-              spLimit={spLimit}
+              zodiacPoints={zodiacPoints}
+              spPoints={spPoints}
             />
           ),
           false: (
@@ -43,10 +41,10 @@ const Template = ({
                 template={template}
                 dotState={dotState}
                 setDotState={setDotState}
-                zodiacLimit={zodiacLimit}
-                setZodiacLimit={setZodiacLimit}
-                spLimit={spLimit}
-                setSpLimit={setSpLimit}
+                zodiacPoints={zodiacPoints}
+                setZodiacPoint={setZodiacPoint}
+                spPoints={spPoints}
+                setSpPoints={setSpPoints}
               />
               <ReturnBtn template={template} setTemplate={setTemplate} />
             </>

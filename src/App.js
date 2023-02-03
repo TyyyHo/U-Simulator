@@ -1,4 +1,4 @@
-import React from "react";
+// import  from "react";
 import { useState } from "react";
 import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -14,28 +14,40 @@ import { getAnalytics } from "firebase/analytics";
 
 import { firebase } from "./firebaseConfig";
 
-
-
 function App() {
   firebase(initializeApp, getAnalytics);
   const [dotState, setDotState] = useState(defaultDotState);
+  const [zodiacPoints, setZodiacPoint] = useState(0);
+  const [spPoints, setSpPoints] = useState(0);
 
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/">
-            <Route
-              index
-              element={
-                <Simulator dotState={dotState} setDotState={setDotState} />
-              }
-            />
-            <Route
-              path={`:importStr`}
-              element={<Pending setDotState={setDotState} />}
-            />
-          </Route>
+          <Route
+            path="/"
+            element={
+              <Simulator
+                dotState={dotState}
+                setDotState={setDotState}
+                zodiacPoints={zodiacPoints}
+                setZodiacPoint={setZodiacPoint}
+                spPoints={spPoints}
+                setSpPoints={setSpPoints}
+              />
+            }
+          />
+          <Route
+            path="/:importStr"
+            element={
+              <Pending
+                dotState={dotState}
+                setDotState={setDotState}
+                setZodiacPoint={setZodiacPoint}
+                setSpPoints={setSpPoints}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>

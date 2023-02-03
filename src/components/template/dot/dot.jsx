@@ -6,15 +6,7 @@ import { dotData } from "./dotData";
 
 import { ReactComponent as DotImg } from "../../svg/dot/dot.svg";
 
-const Dot = ({
-  template,
-  dotState,
-  setDotState,
-  zodiacLimit,
-  setZodiacLimit,
-  spLimit,
-  setSpLimit,
-}) => {
+const Dot = ({ template, dotState, setDotState,zodiacPoints,setZodiacPoint,spPoints, setSpPoints }) => {
   // set up an array for line to map()
   let lineList = [];
   for (let index = 1; index <= dotData[template].line; index++) {
@@ -55,10 +47,14 @@ const Dot = ({
     switch (isAvailable) {
       case "available":
         newState[template][dotId] = true;
+        setZodiacPoint(zodiacPoints + 1);
+        dotData[template].dotType === "sp" ? setSpPoints(spPoints + 1):console.log("");
         setDotState(newState);
         break;
       case "chosen":
         newState[template][dotId] = false;
+        setZodiacPoint(zodiacPoints - 1);
+        dotData[template].dotType === "sp" ? setSpPoints(spPoints - 1):console.log("");
         setDotState(newState);
         break;
 
@@ -66,7 +62,6 @@ const Dot = ({
         break;
     }
   }
-
   // 專有名詞是否可被點選
   function isPointer(text) {
     return text !== undefined ? "isPointer" : "notPointer";
@@ -88,56 +83,56 @@ const Dot = ({
 
   return (
     <div className="rwdContainer">
-    <div className={`dotContainer dot_${template}`}>
-      {/* 專有名詞註釋欄位 */}
-      <div
-        className={`noteText ${isShow}`}
-        onClick={() => changeNoteText(undefined)}
-      >
-        {noteText.map((item, i) => {
-          return <div key={i}>{item}</div>;
-        })}
-        <div className="remark">{"〈點擊本視窗任意處關閉〉"}</div>
-      </div>
+      <div className={`dotContainer dot_${template}`}>
+        {/* 專有名詞註釋欄位 */}
+        <div
+          className={`noteText ${isShow}`}
+          onClick={() => changeNoteText(undefined)}
+        >
+          {noteText.map((item, i) => {
+            return <div key={i}>{item}</div>;
+          })}
+          <div className="remark">{"〈點擊本視窗任意處關閉〉"}</div>
+        </div>
 
-      {/* Dot本體+文字 */}
-      {dotData[template].dot.map((item, index) => {
-        return (
-          <div key={index} id={`dot${index + 1}`} className="dot">
-            <DotImg
-              className={`dotImg ${isAvailable(
-                item.connectDot,
-                `dot${index + 1}`
-              )}`}
-              onClick={() => {
-                changeState(
-                  `${isAvailable(item.connectDot, `dot${index + 1}`)}`,
-                  template,
+        {/* Dot本體+文字 */}
+        {dotData[template].dot.map((item, index) => {
+          return (
+            <div key={index} id={`dot${index + 1}`} className="dot">
+              <DotImg
+                className={`dotImg ${isAvailable(
+                  item.connectDot,
                   `dot${index + 1}`
-                );
-              }}
-            />
-            <div
-              className={`text_container ${isPointer(item.noteText)}`}
-              onClick={() => changeNoteText(item.noteText)}
-            >
-              {item.text.map((innerItem, i) => {
-                return (
-                  <div key={i} className="text">
-                    {innerItem}
-                  </div>
-                );
-              })}
+                )}`}
+                onClick={() => {
+                  changeState(
+                    `${isAvailable(item.connectDot, `dot${index + 1}`)}`,
+                    template,
+                    `dot${index + 1}`
+                  );
+                }}
+              />
+              <div
+                className={`text_container ${isPointer(item.noteText)}`}
+                onClick={() => changeNoteText(item.noteText)}
+              >
+                {item.text.map((innerItem, i) => {
+                  return (
+                    <div key={i} className="text">
+                      {innerItem}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
 
-      {/* 連接線 */}
-      {lineList.map((item, index) => {
-        return <div key={index} id={item} className="line"></div>;
-      })}
-    </div>
+        {/* 連接線 */}
+        {lineList.map((item, index) => {
+          return <div key={index} id={item} className="line"></div>;
+        })}
+      </div>
     </div>
   );
 };

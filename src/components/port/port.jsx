@@ -1,17 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import "./port.scss";
 import "./port_mobile.scss";
 
 import { defaultDotState } from "../../dotState";
-import { useState } from "react";
 
-const Port = ({
-  setTemplate,
-  dotState,
-  setDotState,
-  setZodiacLimit,
-  setSpLimit,
-}) => {
+const Port = ({ setTemplate, dotState, setDotState, reset }) => {
   const [barState, setBarState] = useState("none");
   const [exportStr, setExportStr] = useState("");
   const [url, setUrl] = useState("");
@@ -55,18 +49,10 @@ const Port = ({
     setBarState("export");
   }
 
-  function reset() {
-    setDotState(defaultDotState);
-    setZodiacLimit(0);
-    setSpLimit(0);
-    setBarState("none");
-    setTemplate("I");
-  }
-
   return (
     <>
       <div className="portContainer">
-        <button className="reset" type="reset" onClick={reset}>
+        <button className="reset" onClick={() => reset(setBarState)}>
           重置
         </button>
         {/* <br /> */}

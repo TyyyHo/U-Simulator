@@ -1,4 +1,6 @@
-import { React, useEffect, useState } from "react";
+import { useState } from "react";
+
+import { defaultDotState } from "../dotState";
 
 import Template from "../components/template/template";
 import SpecializationList from "../components/specialization/specializationList";
@@ -8,37 +10,44 @@ import Counter from "../components/counter/counter";
 import Instruction from "../components/instruction/instruction";
 import Alert from "../components/alert/alert";
 
-function Simulator({ dotState, setDotState }) {
+function Simulator({ dotState, setDotState, zodiacPoints, setZodiacPoint, spPoints, setSpPoints }) {
   const [template, setTemplate] = useState("I");
   const [alertMsg, setAlertMsg] = useState("");
-  const [zodiacLimit, setZodiacLimit] = useState(0);
-  const [spLimit, setSpLimit] = useState(0);
 
-  function dotInit() {
-    let count = 0;
-    let spCount = 0;
-    // 物件轉陣列
-    let detectObj = Object.values(dotState);
 
-    // 若dotState中，dot的值為true，則將zodiacLimit+1；若為專精則spLimit也+1
-    detectObj.forEach((element) => {
-      Object.values(element).forEach((e) => {
-        if (e === true) {
-          count += 1;
-
-          if (element.type === "sp") {
-            spCount += 1;
-          }
-        }
-      });
-    });
-    setZodiacLimit(count);
-    setSpLimit(spCount);
+  function reset(setBarState) {
+    setDotState(defaultDotState);
+    setZodiacPoint(0);
+    setSpPoints(0);
+    setBarState("none");
+    setTemplate("I");
   }
 
-  useEffect(() => {
-    dotInit();
-  });
+  // useEffect(() => {
+  //   function pointDetect() {
+  //     let count = 0;
+  //     let spCount = 0;
+  //     // 物件轉陣列
+  //     let detectObj = Object.values(dotState);
+
+  //     // 若dotState中，dot的值為true，則將zodiacPoints+1；若為專精則spPoints也+1
+  //     detectObj.forEach((element) => {
+  //       Object.values(element).forEach((e) => {
+  //         if (e === true) {
+  //           count += 1;
+
+  //           if (element.type === "sp") {
+  //             spCount += 1;
+  //           }
+  //         }
+  //       });
+  //     });
+  //     setZodiacPoint(count);
+  //     setSpPoints(spCount);
+  //   }
+
+  //   pointDetect();
+  // });
 
   return (
     <div className="App">
@@ -47,30 +56,30 @@ function Simulator({ dotState, setDotState }) {
         setTemplate={setTemplate}
         dotState={dotState}
         setDotState={setDotState}
-        zodiacLimit={zodiacLimit}
-        setZodiacLimit={setZodiacLimit}
-        spLimit={spLimit}
+        zodiacPoints={zodiacPoints}
+        setZodiacPoint={setZodiacPoint}
+        spPoints={spPoints}
+        setSpPoints={setSpPoints}
       />
       <SpecializationList
         setTemplate={setTemplate}
         dotState={dotState}
-        zodiacLimit={zodiacLimit}
-        spLimit={spLimit}
+        zodiacPoints={zodiacPoints}
+        spPoints={spPoints}
         setAlertMsg={setAlertMsg}
       />
       <CommonList
         setTemplate={setTemplate}
-        zodiacLimit={zodiacLimit}
+        zodiacPoints={zodiacPoints}
         setAlertMsg={setAlertMsg}
       />
       <Port
         setTemplate={setTemplate}
         dotState={dotState}
         setDotState={setDotState}
-        setZodiacLimit={setZodiacLimit}
-        setSpLimit={setSpLimit}
+        reset={reset}
       />
-      <Counter zodiacLimit={zodiacLimit} />
+      <Counter zodiacPoints={zodiacPoints} />
       <Instruction />
       <Alert alertMsg={alertMsg} setAlertMsg={setAlertMsg} />
     </div>

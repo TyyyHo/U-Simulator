@@ -7,7 +7,7 @@ import { dotData } from "../dot/dotData";
 
 import { ReactComponent as SymbolImg } from "../../svg/symbol/atom.svg";
 
-const Symbol = ({ template, setTemplate, dotState, zodiacLimit, spLimit }) => {
+const Symbol = ({template, setTemplate, dotState, zodiacPoints, spPoints,}) => {
   // set up an array for line to map()
   let lineList = [];
   for (let index = 1; index <= symbolData[template].line; index++) {
@@ -20,12 +20,12 @@ const Symbol = ({ template, setTemplate, dotState, zodiacLimit, spLimit }) => {
       let spClass = dotData[target].spClass;
       switch (spClass) {
         case 2:
-          if (spLimit >= 7 && zodiacLimit >= 45) {
+          if (spPoints >= 7 && zodiacPoints >= 45) {
             return "available";
           }
           return;
         case 3:
-          if (spLimit >= 14 && zodiacLimit >= 70) {
+          if (spPoints >= 14 && zodiacPoints >= 70) {
             return "available";
           }
           return;
@@ -51,12 +51,12 @@ const Symbol = ({ template, setTemplate, dotState, zodiacLimit, spLimit }) => {
       let spClass = dotData[target].spClass;
       switch (spClass) {
         case 2:
-          if (spLimit >= 7 && zodiacLimit >= 45) {
+          if (spPoints >= 7 && zodiacPoints >= 45) {
             setTemplate(target);
           }
           break;
         case 3:
-          if (spLimit >= 14 && zodiacLimit >= 70) {
+          if (spPoints >= 14 && zodiacPoints >= 70) {
             setTemplate(target);
           }
           break;

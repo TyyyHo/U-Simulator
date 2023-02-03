@@ -7,15 +7,15 @@ import { SpSymbolData } from "../template/symbol/data/SpSymbolData";
 const SpecializationList = ({
   setTemplate,
   dotState,
-  zodiacLimit,
-  spLimit,
+  zodiacPoints,
+  spPoints,
   setAlertMsg,
 }) => {
   const specializationOption = Object.keys(SpSymbolData);
 
   function spRule(target) {
-    if (spLimit === 0) {
-      return zodiacLimit >= 22 ? "available" : "underThreshold";
+    if (spPoints === 0) {
+      return zodiacPoints >= 22 ? "available" : "underThreshold";
     }
     const firstSymbol = SpSymbolData[target].symbol[0];
     return dotState[firstSymbol].dot1 === true ? "available" : "spIsUnique";

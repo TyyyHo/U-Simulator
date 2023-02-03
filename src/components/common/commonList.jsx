@@ -3,7 +3,7 @@ import "./commonList.scss";
 import "./commonList_mobile.scss";
 import { commonSymbolData } from "../template/symbol/data/commonSymbolData";
 
-const CommonList = ({ setTemplate, zodiacLimit, setAlertMsg }) => {
+const CommonList = ({ setTemplate, zodiacPoints, setAlertMsg }) => {
   const commonId = Object.keys(commonSymbolData);
   const commonOption = Object.values(commonSymbolData);
   commonId.forEach((element, index) => {
@@ -11,7 +11,7 @@ const CommonList = ({ setTemplate, zodiacLimit, setAlertMsg }) => {
   });
 
   function commonRule(limit) {
-    return zodiacLimit >= limit ? "available" : null;
+    return zodiacPoints >= limit ? "available" : null;
   }
 
   function commonClick(limit, id) {
@@ -19,7 +19,6 @@ const CommonList = ({ setTemplate, zodiacLimit, setAlertMsg }) => {
       setTemplate(id);
       return;
     }
-    setAlertMsg("");
     setAlertMsg(`至少需配置${limit}點特性才能啟用該星系`);
   }
 
