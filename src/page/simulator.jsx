@@ -10,10 +10,16 @@ import Counter from "../components/counter/counter";
 import Instruction from "../components/instruction/instruction";
 import Alert from "../components/alert/alert";
 
-function Simulator({ dotState, setDotState, zodiacPoints, setZodiacPoint, spPoints, setSpPoints }) {
+function Simulator({
+  dotState,
+  setDotState,
+  zodiacPoints,
+  setZodiacPoint,
+  spPoints,
+  setSpPoints,
+}) {
   const [template, setTemplate] = useState("I");
   const [alertMsg, setAlertMsg] = useState("");
-
 
   function reset(setBarState) {
     setDotState(defaultDotState);
@@ -23,31 +29,43 @@ function Simulator({ dotState, setDotState, zodiacPoints, setZodiacPoint, spPoin
     setTemplate("I");
   }
 
-  // useEffect(() => {
-  //   function pointDetect() {
-  //     let count = 0;
-  //     let spCount = 0;
-  //     // 物件轉陣列
-  //     let detectObj = Object.values(dotState);
+  function FnImport(url, setBarState) {
+    //set dotState
+    let importStr = decodeURIComponent(
+      url.replace("https://ud-simulator.web.app/", "")
+    );
+    let importArr = importStr.split(",");
+    let importDotState = JSON.parse(JSON.stringify(defaultDotState));
 
-  //     // 若dotState中，dot的值為true，則將zodiacPoints+1；若為專精則spPoints也+1
-  //     detectObj.forEach((element) => {
-  //       Object.values(element).forEach((e) => {
-  //         if (e === true) {
-  //           count += 1;
+    importArr.forEach((element) => {
+      let tempArr = element.split("-");
+      importDotState[tempArr[0]][`dot${tempArr[1]}`] = true;
+    });
 
-  //           if (element.type === "sp") {
-  //             spCount += 1;
-  //           }
-  //         }
-  //       });
-  //     });
-  //     setZodiacPoint(count);
-  //     setSpPoints(spCount);
-  //   }
+    // set counter
+    let arrForCount = Object.values(importDotState);
+    let count = 0;
+    let spCount = 0;
+    arrForCount.forEach((element) => {
+      Object.values(element).forEach((e) => {
+        if (e === true) {
+          count += 1;
 
-  //   pointDetect();
-  // });
+          if (element.type === "sp") {
+            spCount += 1;
+          }
+        }
+      });
+    });
+
+    setZodiacPoint(count);
+    setSpPoints(spCount);
+
+    // 修改dotState並回首頁
+    setDotState(importDotState);
+    setBarState("none");
+    setTemplate("I");
+  }
 
   return (
     <div className="App">
@@ -74,10 +92,9 @@ function Simulator({ dotState, setDotState, zodiacPoints, setZodiacPoint, spPoin
         setAlertMsg={setAlertMsg}
       />
       <Port
-        setTemplate={setTemplate}
         dotState={dotState}
-        setDotState={setDotState}
         reset={reset}
+        FnImport={FnImport}
       />
       <Counter zodiacPoints={zodiacPoints} />
       <Instruction />

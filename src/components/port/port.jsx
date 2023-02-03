@@ -3,29 +3,10 @@ import { useState } from "react";
 import "./port.scss";
 import "./port_mobile.scss";
 
-import { defaultDotState } from "../../dotState";
-
-const Port = ({ setTemplate, dotState, setDotState, reset }) => {
+const Port = ({ dotState, reset , FnImport }) => {
   const [barState, setBarState] = useState("none");
   const [exportStr, setExportStr] = useState("");
   const [url, setUrl] = useState("");
-
-  function FnImport() {
-    let importStr = decodeURIComponent(
-      url.replace("https://ud-simulator.web.app/", "")
-    );
-    let importArr = importStr.split(",");
-    let importDotState = JSON.parse(JSON.stringify(defaultDotState));
-
-    importArr.forEach((element) => {
-      let tempArr = element.split("-");
-      importDotState[tempArr[0]][`dot${tempArr[1]}`] = true;
-    });
-
-    setDotState(importDotState);
-    setBarState("none");
-    setTemplate("I");
-  }
 
   function FnExport() {
     // 物件轉陣列
@@ -45,6 +26,7 @@ const Port = ({ setTemplate, dotState, setDotState, reset }) => {
     let url = `https://ud-simulator.web.app/${encodeURIComponent(
       exportArr.join(",")
     )}`;
+
     setExportStr(url);
     setBarState("export");
   }
@@ -70,7 +52,7 @@ const Port = ({ setTemplate, dotState, setDotState, reset }) => {
             <div className="infoBar">
               <input type="text" onChange={(e) => setUrl(e.target.value)} />
               <br />
-              <button onClick={FnImport}>確認</button>
+              <button onClick={()=>FnImport(url, setBarState)}>確認</button>
               <button onClick={() => setBarState("none")}>關閉</button>
             </div>
           ),
