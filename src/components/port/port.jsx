@@ -23,9 +23,7 @@ const Port = ({ dotState, reset , FnImport }) => {
     });
 
     // 將整理好的exportArr轉為字串，再進行URI編碼
-    let url = `https://ud-simulator.web.app/${encodeURIComponent(
-      exportArr.join(",")
-    )}`;
+    let url = `https://ud-simulator.web.app/${encodeURIComponent(exportArr.join(","))}`;
 
     setExportStr(url);
     setBarState("export");

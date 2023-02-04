@@ -14,10 +14,7 @@ const Pending = ({ dotState, setDotState, setZodiacPoint, setSpPoints }) => {
     function setup() {
       //set dotState
       let importArr = importStr.split(",");
-      // let importDotState = JSON.parse(JSON.stringify(defaultDotState));
-      let importDotState = {
-        ...defaultDotState,
-      };
+      let importDotState = JSON.parse(JSON.stringify(defaultDotState));
 
       importArr.forEach((element) => {
         let tempArr = element.split("-");

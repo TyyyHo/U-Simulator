@@ -50,9 +50,13 @@ const Dot = ({
 
   // DotState狀態改動
   function changeState(isAvailable, template, dotId) {
+    // ES6之後版本
     let newState = {
       ...dotState,
+      [template]: { ...dotState[template] },
     };
+    //ES5(含5)以前
+    // let newState = JSON.parse(JSON.stringify(dotState))
     switch (isAvailable) {
       case "available":
         newState[template][dotId] = true;
