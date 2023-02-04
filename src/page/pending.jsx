@@ -14,14 +14,17 @@ const Pending = ({ dotState, setDotState, setZodiacPoint, setSpPoints }) => {
     function setup() {
       //set dotState
       let importArr = importStr.split(",");
-      let importDotState = JSON.parse(JSON.stringify(defaultDotState));
+      // let importDotState = JSON.parse(JSON.stringify(defaultDotState));
+      let importDotState = {
+        ...defaultDotState,
+      };
 
       importArr.forEach((element) => {
         let tempArr = element.split("-");
         importDotState[tempArr[0]][`dot${tempArr[1]}`] = true;
       });
       setDotState(importDotState);
-      
+
       // set counter
       let arrForCount = Object.values(importDotState);
       let count = 0;

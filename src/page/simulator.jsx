@@ -35,7 +35,9 @@ function Simulator({
       url.replace("https://ud-simulator.web.app/", "")
     );
     let importArr = importStr.split(",");
-    let importDotState = JSON.parse(JSON.stringify(defaultDotState));
+    let importDotState = {
+      ...defaultDotState,
+    };
 
     importArr.forEach((element) => {
       let tempArr = element.split("-");

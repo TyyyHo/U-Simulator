@@ -6,7 +6,15 @@ import { dotData } from "./dotData";
 
 import { ReactComponent as DotImg } from "../../svg/dot/dot.svg";
 
-const Dot = ({ template, dotState, setDotState,zodiacPoints,setZodiacPoint,spPoints, setSpPoints }) => {
+const Dot = ({
+  template,
+  dotState,
+  setDotState,
+  zodiacPoints,
+  setZodiacPoint,
+  spPoints,
+  setSpPoints,
+}) => {
   // set up an array for line to map()
   let lineList = [];
   for (let index = 1; index <= dotData[template].line; index++) {
@@ -42,19 +50,20 @@ const Dot = ({ template, dotState, setDotState,zodiacPoints,setZodiacPoint,spPoi
 
   // DotState狀態改動
   function changeState(isAvailable, template, dotId) {
-    let newState = JSON.parse(JSON.stringify(dotState));
-
+    let newState = {
+      ...dotState,
+    };
     switch (isAvailable) {
       case "available":
         newState[template][dotId] = true;
         setZodiacPoint(zodiacPoints + 1);
-        dotData[template].dotType === "sp" ? setSpPoints(spPoints + 1):console.log("");
+        dotData[template].dotType === "sp" ? setSpPoints(spPoints + 1) : console.log("");
         setDotState(newState);
         break;
       case "chosen":
         newState[template][dotId] = false;
         setZodiacPoint(zodiacPoints - 1);
-        dotData[template].dotType === "sp" ? setSpPoints(spPoints - 1):console.log("");
+        dotData[template].dotType === "sp" ? setSpPoints(spPoints - 1) : console.log("");
         setDotState(newState);
         break;
 
