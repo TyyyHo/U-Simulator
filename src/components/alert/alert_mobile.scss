@@ -1,0 +1,26 @@
+// RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    .alert {
+        // 排版&位置
+        width: 60%;
+        left: 18%;
+        padding: 1% 1.5%;
+    
+        // 文字
+        font-size: large;
+    }
+}
+
+
+// RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+    .alert {
+        // 排版&位置
+        width: 80%;
+        left: 6.95%;
+        padding: 0.5% 3%;
+    
+        // 文字
+        font-size: medium;
+    }
+}
