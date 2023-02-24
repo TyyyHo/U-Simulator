@@ -3,12 +3,14 @@ import { useState } from "react";
 import { defaultDotState } from "../dotState";
 
 import Template from "../components/template/template";
+
 import SpecializationList from "../components/specialization/specializationList";
 import CommonList from "../components/common/commonList";
 import Port from "../components/port/port";
-import Counter from "../components/counter/counter";
 import Instruction from "../components/instruction/instruction";
 import Alert from "../components/alert/alert";
+import Counter from "../components/counter/counter";
+import Loading from "../components/loading/loading";
 
 function Simulator({
   dotState,
@@ -20,6 +22,18 @@ function Simulator({
 }) {
   const [template, setTemplate] = useState("I");
   const [alertMsg, setAlertMsg] = useState("");
+  const [isLoad, setLoading] = useState(false);
+
+  (function lazyLoad() {
+    window.onload = () => {
+      setLoading(true);
+    };
+
+    // edge/safari/無痕模式 無法完成componet內的window.onload
+    setTimeout(() => {
+      setLoading(true);
+    }, 6000);
+  })();
 
   function reset(setBarState) {
     setDotState(defaultDotState);
@@ -71,6 +85,7 @@ function Simulator({
 
   return (
     <div className="App">
+      <Loading isLoad={isLoad} />
       <Template
         template={template}
         setTemplate={setTemplate}
@@ -93,11 +108,7 @@ function Simulator({
         zodiacPoints={zodiacPoints}
         setAlertMsg={setAlertMsg}
       />
-      <Port
-        dotState={dotState}
-        reset={reset}
-        FnImport={FnImport}
-      />
+      <Port dotState={dotState} reset={reset} FnImport={FnImport} />
       <Counter zodiacPoints={zodiacPoints} />
       <Instruction />
       <Alert alertMsg={alertMsg} setAlertMsg={setAlertMsg} />

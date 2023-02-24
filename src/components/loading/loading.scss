@@ -1,0 +1,41 @@
+.loading {
+    background-color: rgb(27, 27, 27);
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        opacity: 0.5;
+        width: 150px;
+        height: 150px;
+        animation: rotate 5s linear infinite;
+    }
+
+    p {
+        font-size: large;
+        font-weight: 700;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+}
+
+.visible{
+    display: flex;
+}
+
+.invisible {
+    display: none;
+}

@@ -16,7 +16,7 @@ const Template = ({
   zodiacPoints,
   setZodiacPoint,
   spPoints,
-  setSpPoints
+  setSpPoints,
 }) => {
   // isDot
   let isSymbol = symbolList.some((element) => element === template);
