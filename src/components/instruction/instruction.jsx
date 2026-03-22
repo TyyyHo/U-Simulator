@@ -11,7 +11,11 @@ const Instruction = () => {
   const [display, setDisplay] = useState(false);
   return (
     <div className="instruction">
-      <img src="/img/instruction/question.webp" alt="instruction" onClick={() => setDisplay(!display)} />
+      <img
+        src={`${process.env.PUBLIC_URL}/img/instruction/question.webp`}
+        alt="instruction"
+        onClick={() => setDisplay(!display)}
+      />
       <div className="rwdContainer">
         <div className={`${display} instructionText`} onClick={() => setDisplay(!display)}>
           <div className="textContainer">

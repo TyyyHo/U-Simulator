@@ -7,21 +7,14 @@ import Pending from "./page/pending";
 
 import { defaultDotState } from "./dotState";
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-import { firebase } from "./firebaseConfig";
-
 function App() {
-  firebase(initializeApp, getAnalytics);
   const [dotState, setDotState] = useState(defaultDotState);
   const [zodiacPoints, setZodiacPoint] = useState(0);
   const [spPoints, setSpPoints] = useState(0);
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route
             path="/"

@@ -44,10 +44,26 @@ function Simulator({
   }
 
   function FnImport(url, setBarState) {
-    //set dotState
-    let importStr = decodeURIComponent(
-      url.replace("https://ud-simulator.web.app/", "")
-    );
+    // set dotState
+    let importStr = "";
+    const basePath = process.env.PUBLIC_URL || "";
+
+    try {
+      const parsedUrl = new URL(url);
+      importStr = decodeURIComponent(parsedUrl.pathname);
+
+      if (basePath && importStr.startsWith(basePath)) {
+        importStr = importStr.slice(basePath.length);
+      }
+    } catch {
+      importStr = decodeURIComponent(url).replace(
+        "https://ud-simulator.web.app/",
+        ""
+      );
+    }
+
+    importStr = importStr.replace(/^\/+/, "");
+
     let importArr = importStr.split(",");
     let importDotState = {
       ...defaultDotState,

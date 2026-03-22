@@ -22,8 +22,10 @@ const Port = ({ dotState, reset , FnImport }) => {
       });
     });
 
-    // 將整理好的exportArr轉為字串，再進行URI編碼
-    let url = `https://ud-simulator.web.app/${encodeURIComponent(exportArr.join(","))}`;
+    // 以目前網站來源組出可分享連結，避免部署環境綁死在單一網域
+    const basePath = process.env.PUBLIC_URL || "";
+    const baseUrl = `${window.location.origin}${basePath}/`;
+    let url = `${baseUrl}${encodeURIComponent(exportArr.join(","))}`;
 
     setExportStr(url);
     setBarState("export");
