@@ -58,48 +58,10 @@
   transform: scale(1.1, 1.1);
   transition-duration: 0.1s;
 }
-.dotContainer .dot .chosen .star {
-  fill: #FFC847;
-}
-.dotContainer .dot .chosen .insideStar {
-  fill: rgb(80, 80, 80);
-}
-.dotContainer .dot .chosen .circle {
-  fill: #1e7973;
-}
 .dotContainer .dot .available {
   cursor: pointer;
   transition-duration: 0.1s;
 }
 .dotContainer .dot .available .star {
   fill: #fccf67;
-}
-.dotContainer .dot .available .insideStar {
-  fill: rgb(114, 114, 114);
-  opacity: 0.8;
-}
-.dotContainer .dot .available .circle {
-  fill: rgb(100, 93, 55);
-  opacity: 0.8;
-}
-.dotContainer .dot .available:hover .star {
-  opacity: 1;
-}
-.dotContainer .dot .available:hover .circle,
-.dotContainer .dot .available:hover .insideStar {
-  opacity: 1;
-}
-.dotContainer .dot .available:hover .insideStar {
-  fill: rgb(80, 80, 80);
-}
-.dotContainer .dot .unavailable .star {
-  fill: lightgray;
-}
-.dotContainer .dot .unavailable .insideStar {
-  fill: rgb(80, 80, 80);
-  opacity: 0.2;
-}
-.dotContainer .dot .unavailable .circle {
-  fill: rgb(80, 80, 80);
-  opacity: 0.3;
 }

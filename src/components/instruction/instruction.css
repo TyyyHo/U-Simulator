@@ -52,21 +52,6 @@
   height: 25px;
   margin-right: 5px;
 }
-.instruction .instructionText .sContainer .symbol .unavailable {
-  border: 2px solid rgb(170, 170, 170);
-}
-.instruction .instructionText .sContainer .symbol .unavailable path {
-  fill: rgb(130, 130, 130);
-}
-.instruction .instructionText .sContainer .symbol .available {
-  border: 3px solid #a2dde2;
-}
-.instruction .instructionText .sContainer .symbol .chosen {
-  border: 4px solid #a2dde2;
-}
-.instruction .instructionText .sContainer .symbol .chosen path {
-  fill: #FFC847;
-}
 .instruction .instructionText .dContainer {
   width: 100%;
   display: flex;
@@ -84,50 +69,12 @@
   padding: 3px;
   width: 30px;
 }
-.instruction .instructionText .dContainer .dot .unavailable .star {
-  fill: lightgray;
-}
-.instruction .instructionText .dContainer .dot .unavailable .insideStar {
-  fill: rgb(80, 80, 80);
-  opacity: 0.2;
-}
-.instruction .instructionText .dContainer .dot .unavailable .circle {
-  fill: rgb(80, 80, 80);
-  opacity: 0.3;
-}
 .instruction .instructionText .dContainer .dot .available .star {
   fill: #fccf67;
   opacity: 0.7;
 }
-.instruction .instructionText .dContainer .dot .available .insideStar {
-  fill: rgb(114, 114, 114);
-  opacity: 0.8;
-}
-.instruction .instructionText .dContainer .dot .available .circle {
-  fill: rgb(100, 93, 55);
-  opacity: 0.8;
-}
-.instruction .instructionText .dContainer .dot .available:hover .star {
-  opacity: 1;
-}
-.instruction .instructionText .dContainer .dot .available:hover .circle,
-.instruction .instructionText .dContainer .dot .available:hover .insideStar {
-  opacity: 1;
-}
-.instruction .instructionText .dContainer .dot .available:hover .insideStar {
-  fill: rgb(80, 80, 80);
-}
 .instruction .instructionText .dContainer .dot .chosen {
   transform: scale(1.1, 1.1);
-}
-.instruction .instructionText .dContainer .dot .chosen .star {
-  fill: #FFC847;
-}
-.instruction .instructionText .dContainer .dot .chosen .insideStar {
-  fill: rgb(80, 80, 80);
-}
-.instruction .instructionText .dContainer .dot .chosen .circle {
-  fill: #1e7973;
 }
 .instruction .true {
   display: block;

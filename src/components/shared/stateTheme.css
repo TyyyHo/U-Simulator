@@ -1,0 +1,76 @@
+.symbolContainer .false,
+.instruction .instructionText .sContainer .symbol .unavailable {
+  border: 2px solid rgb(170, 170, 170);
+}
+
+.symbolContainer .available,
+.instruction .instructionText .sContainer .symbol .available {
+  border: 3px solid #a2dde2;
+}
+
+.symbolContainer .true,
+.instruction .instructionText .sContainer .symbol .chosen {
+  border: 4px solid #a2dde2;
+}
+
+.symbolContainer .false path,
+.instruction .instructionText .sContainer .symbol .unavailable path {
+  fill: rgb(130, 130, 130);
+}
+
+.symbolContainer .true path,
+.instruction .instructionText .sContainer .symbol .chosen path,
+.dotContainer .dot .chosen .star,
+.instruction .instructionText .dContainer .dot .chosen .star {
+  fill: #ffc847;
+}
+
+.dotContainer .dot .chosen .insideStar,
+.instruction .instructionText .dContainer .dot .chosen .insideStar,
+.dotContainer .dot .available:hover .insideStar,
+.instruction .instructionText .dContainer .dot .available:hover .insideStar {
+  fill: rgb(80, 80, 80);
+}
+
+.dotContainer .dot .chosen .circle,
+.instruction .instructionText .dContainer .dot .chosen .circle {
+  fill: #1e7973;
+}
+
+.dotContainer .dot .available .insideStar,
+.instruction .instructionText .dContainer .dot .available .insideStar {
+  fill: rgb(114, 114, 114);
+  opacity: 0.8;
+}
+
+.dotContainer .dot .available .circle,
+.instruction .instructionText .dContainer .dot .available .circle {
+  fill: rgb(100, 93, 55);
+  opacity: 0.8;
+}
+
+.dotContainer .dot .available:hover .star,
+.instruction .instructionText .dContainer .dot .available:hover .star,
+.dotContainer .dot .available:hover .circle,
+.instruction .instructionText .dContainer .dot .available:hover .circle,
+.dotContainer .dot .available:hover .insideStar,
+.instruction .instructionText .dContainer .dot .available:hover .insideStar {
+  opacity: 1;
+}
+
+.dotContainer .dot .unavailable .star,
+.instruction .instructionText .dContainer .dot .unavailable .star {
+  fill: lightgray;
+}
+
+.dotContainer .dot .unavailable .insideStar,
+.instruction .instructionText .dContainer .dot .unavailable .insideStar {
+  fill: rgb(80, 80, 80);
+  opacity: 0.2;
+}
+
+.dotContainer .dot .unavailable .circle,
+.instruction .instructionText .dContainer .dot .unavailable .circle {
+  fill: rgb(80, 80, 80);
+  opacity: 0.3;
+}

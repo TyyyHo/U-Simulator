@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./instruction.css";
 import "./instruction_mobile.css";
+import "../shared/stateTheme.css";
 
 import { ReactComponent as DotImg } from "../svg/dot/dot.svg";
 import { ReactComponent as SymbolImg } from "../svg/symbol/atom.svg";

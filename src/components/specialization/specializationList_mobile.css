@@ -3,9 +3,6 @@
     width: 80%;
     margin-left: 10%;
   }
-  .spContainer .specializationList {
-    background-size: 80%;
-  }
 }
 @media only screen and (max-width: 420px) {
   .spContainer {
@@ -16,7 +13,5 @@
   }
   .spContainer .specializationList {
     width: 200%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
   }
 }
