@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(../../../public/img/listBg/listBg.webp);
+  background-image: url(../../assets/listBg/listBg.webp);
   background-size: 50%;
   color: rgba(0, 0, 0, 0.5);
 }

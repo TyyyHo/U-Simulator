@@ -36,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "firebase": "^9.16.0",
     "react-scripts": "^5.0.1"
   }
 }
