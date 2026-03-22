@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import "./port.scss";
-import "./port_mobile.scss";
+import "./port.css";
+import "./port_mobile.css";
 
 const Port = ({ dotState, reset , FnImport }) => {
   const [barState, setBarState] = useState("none");

@@ -1,6 +1,6 @@
 import React from "react";
-import "./alert.scss";
-import "./alert_mobile.scss";
+import "./alert.css";
+import "./alert_mobile.css";
 
 const Alert = ({ alertMsg, setAlertMsg }) => {
   function animatmationActive() {

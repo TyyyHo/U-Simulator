@@ -1,0 +1,67 @@
+.dotContainer {
+  height: 800px;
+  width: 1200px;
+}
+.dotContainer .noteText {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 25%;
+  z-index: 15;
+  background-color: rgb(121, 121, 121);
+  border: 2px solid rgb(122, 224, 207);
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+.dotContainer .noteText .remark {
+  color: black;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.dotContainer .noteText div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dotContainer .noteText div:first-child {
+  padding-top: 8px;
+}
+.dotContainer .noteText div:last-child {
+  padding-bottom: 9px;
+}
+.dotContainer .isPointer {
+  cursor: pointer;
+}
+.dotContainer .show {
+  display: block;
+}
+.dotContainer .dot {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13%;
+  z-index: 10;
+}
+.dotContainer .dot .dotImg {
+  max-width: 40%;
+  max-height: 35px;
+}
+.dotContainer .dot .text_container .text {
+  padding: 0 6px;
+  font-size: 14px;
+}
+.dotContainer .dot .chosen {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.1s;
+}
+.dotContainer .dot .available {
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+.dotContainer .dot .available .star {
+  fill: #fccf67;
+}

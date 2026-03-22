@@ -1,0 +1,26 @@
+.symbolContainer {
+  height: 600px;
+  width: 720px;
+}
+.symbolContainer .symbol {
+  max-width: 6.944%;
+  max-height: 8.333%;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3px;
+}
+.symbolContainer .symbol .symbolImg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+.symbolContainer .false {
+  cursor: default;
+}
+.symbolContainer .available {
+  cursor: pointer;
+}
+.symbolContainer .true {
+  cursor: pointer;
+}

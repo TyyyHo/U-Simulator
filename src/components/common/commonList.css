@@ -1,0 +1,20 @@
+.commonContainer {
+  position: fixed;
+  bottom: 2px;
+  height: 40px;
+  width: 80%;
+  margin-left: 10%;
+}
+.commonContainer .commonList {
+  height: 40px;
+  width: 100%;
+  font-size: larger;
+  font-weight: 700;
+  cursor: help;
+}
+.commonContainer .commonList .commonOption {
+  width: 11.12%;
+}
+.commonContainer .commonList .commonOption:active {
+  transform: translate(1px, 1px);
+}

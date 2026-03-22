@@ -1,6 +1,6 @@
 import React from "react";
-import "./counter.scss";
-import "./counter_mobile.scss";
+import "./counter.css";
+import "./counter_mobile.css";
 
 const Counter = ({ zodiacPoints }) => {
   function isOver() {

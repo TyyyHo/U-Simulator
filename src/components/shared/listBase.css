@@ -1,0 +1,38 @@
+.commonContainer .commonList,
+.spContainer .specializationList {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../../../public/img/listBg/listBg.webp);
+  background-size: 50%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.commonContainer .commonList div:first-child,
+.spContainer .specializationList div:first-child {
+  border-left: 2px solid black;
+}
+
+.commonContainer .commonList .commonOption,
+.spContainer .specializationList .specializationOption {
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commonContainer .commonList .available,
+.spContainer .specializationList .available {
+  cursor: pointer;
+  color: black;
+}
+
+.commonContainer .commonList .available:hover span,
+.spContainer .specializationList .available:hover span {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.1s;
+}

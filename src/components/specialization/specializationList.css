@@ -1,0 +1,16 @@
+.spContainer {
+  position: fixed;
+  margin-bottom: 4px;
+  bottom: 42px;
+  width: 60%;
+  margin-left: 20%;
+}
+.spContainer .specializationList {
+  height: 40px;
+  font-size: larger;
+  font-weight: 600;
+}
+.spContainer .specializationList .specializationOption {
+  width: 16.6%;
+  cursor: help;
+}

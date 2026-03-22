@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1250px) {
+  .commonContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .commonContainer {
+    overflow-x: scroll;
+    bottom: 0;
+  }
+  .commonContainer .commonList {
+    width: 300%;
+    margin-left: 0;
+  }
+}
