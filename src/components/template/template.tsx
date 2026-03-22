@@ -1,0 +1,53 @@
+import "./template.css";
+import "./template_mobile.css";
+
+import { symbolList } from "./symbolList";
+
+import Dot from "./dot/dot";
+import Symbol from "./symbol/symbol";
+import ReturnBtn from "./returnBtn/returnBtn";
+import SignBoard from "./signBoard/signBoard";
+
+const Template = ({
+  template,
+  setTemplate,
+  dotState,
+  setDotState,
+  zodiacPoints,
+  setZodiacPoint,
+  spPoints,
+  setSpPoints,
+}) => {
+  // isDot
+  let isSymbol = symbolList.some((element) => element === template);
+
+  return (
+    <div className="template">
+      <SignBoard isSymbol={isSymbol} template={template} />
+      {isSymbol ? (
+        <Symbol
+          template={template}
+          setTemplate={setTemplate}
+          dotState={dotState}
+          zodiacPoints={zodiacPoints}
+          spPoints={spPoints}
+        />
+      ) : (
+        <>
+          <Dot
+            template={template}
+            dotState={dotState}
+            setDotState={setDotState}
+            zodiacPoints={zodiacPoints}
+            setZodiacPoint={setZodiacPoint}
+            spPoints={spPoints}
+            setSpPoints={setSpPoints}
+          />
+          <ReturnBtn template={template} setTemplate={setTemplate} />
+        </>
+      )}
+    </div>
+  );
+};
+
+export default Template;
