@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1250px) {
+  .alert {
+    width: 60%;
+    left: 18%;
+    padding: 1% 1.5%;
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .alert {
+    width: 80%;
+    left: 6.95%;
+    padding: 0.5% 3%;
+    font-size: medium;
+  }
+}

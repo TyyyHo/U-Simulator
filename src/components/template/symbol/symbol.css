@@ -1,0 +1,35 @@
+.symbolContainer {
+  height: 600px;
+  width: 720px;
+}
+.symbolContainer .symbol {
+  max-width: 6.944%;
+  max-height: 8.333%;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3px;
+}
+.symbolContainer .symbol .symbolImg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+.symbolContainer .false {
+  cursor: default;
+  border: 2px solid rgb(170, 170, 170);
+}
+.symbolContainer .false path {
+  fill: rgb(130, 130, 130);
+}
+.symbolContainer .available {
+  cursor: pointer;
+  border: 3px solid #a2dde2;
+}
+.symbolContainer .true {
+  cursor: pointer;
+  border: 4px solid #a2dde2;
+}
+.symbolContainer .true path {
+  fill: #FFC847;
+}

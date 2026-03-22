@@ -1,0 +1,78 @@
+.symbol_VII .symbol, .symbol_VII .symbolImg {
+  width: 35px;
+  height: 35px;
+}
+.symbol_VII #dust {
+  top: 67%;
+  right: 83%;
+}
+.symbol_VII #scent {
+  top: 55%;
+  right: 63%;
+}
+.symbol_VII #stench {
+  top: 71%;
+  right: 52%;
+}
+.symbol_VII #ortemis {
+  top: 37%;
+  right: 51%;
+}
+.symbol_VII #air {
+  top: 50.5%;
+  right: 41.5%;
+}
+.symbol_VII #deadly-poison {
+  top: 22%;
+  right: 30%;
+}
+.symbol_VII #spider {
+  top: 33%;
+  right: 17.5%;
+}
+.symbol_VII #maggot {
+  top: 62%;
+  right: 27%;
+}
+.symbol_VII #line1 {
+  width: 15.8%;
+  top: 64%;
+  right: 67.9%;
+  transform: rotate(-28.2deg);
+}
+.symbol_VII #line2 {
+  width: 12.7%;
+  top: 49.1%;
+  right: 53.5%;
+  transform: rotate(-51.5deg);
+}
+.symbol_VII #line3 {
+  width: 17.8%;
+  top: 32.5%;
+  right: 34.5%;
+  transform: rotate(-32deg);
+}
+.symbol_VII #line4 {
+  width: 11%;
+  top: 66%;
+  right: 55%;
+  transform: rotate(51.5deg);
+}
+.symbol_VII #line5 {
+  width: 8.4%;
+  top: 46.8%;
+  right: 44.6%;
+  transform: rotate(50deg);
+}
+.symbol_VII #line6 {
+  width: 8.8%;
+  top: 30.4%;
+  right: 22%;
+  transform: rotate(37.5deg);
+}
+.symbol_VII #line7 {
+  width: 19.6%;
+  top: 50.6%;
+  right: 15.2%;
+  transform: rotate(-68.7deg);
+}

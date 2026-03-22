@@ -1,5 +1,5 @@
-import "./template.scss";
-import "./template_mobile.scss";
+import "./template.css";
+import "./template_mobile.css";
 
 import { symbolList } from "./symbolList";
 

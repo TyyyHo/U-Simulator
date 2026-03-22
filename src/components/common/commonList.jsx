@@ -1,6 +1,6 @@
 import React from "react";
-import "./commonList.scss";
-import "./commonList_mobile.scss";
+import "./commonList.css";
+import "./commonList_mobile.css";
 import { commonSymbolData } from "../template/symbol/data/commonSymbolData";
 
 const CommonList = ({ setTemplate, zodiacPoints, setAlertMsg }) => {

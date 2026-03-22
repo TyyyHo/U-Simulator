@@ -1,0 +1,104 @@
+.symbol_V .symbol, .symbol_V .symbolImg {
+  width: 35px;
+  height: 35px;
+}
+.symbol_V #constrast {
+  top: 57%;
+  right: 52%;
+}
+.symbol_V #flash {
+  top: 75.5%;
+  right: 56%;
+}
+.symbol_V #mist {
+  top: 65%;
+  right: 34%;
+}
+.symbol_V #hira {
+  top: 42%;
+  right: 35%;
+}
+.symbol_V #dewdrop {
+  top: 23%;
+  right: 37%;
+}
+.symbol_V #fruit {
+  top: 33%;
+  right: 50%;
+}
+.symbol_V #frost {
+  top: 37%;
+  right: 71%;
+}
+.symbol_V #lightning {
+  top: 19%;
+  right: 65%;
+}
+.symbol_V #rainbow {
+  top: 8%;
+  right: 47%;
+}
+.symbol_V #mine {
+  top: 81%;
+  right: 41%;
+}
+.symbol_V #line1 {
+  width: 9.7%;
+  top: 69.2%;
+  right: 51.9%;
+  transform: rotate(-75.4deg);
+}
+.symbol_V #line2 {
+  width: 12.5%;
+  top: 64%;
+  right: 39.5%;
+  transform: rotate(21.8deg);
+}
+.symbol_V #line3 {
+  width: 8.7%;
+  top: 76%;
+  right: 36%;
+  transform: rotate(-62.8deg);
+}
+.symbol_V #line4 {
+  width: 9.2%;
+  top: 81.3%;
+  right: 46.8%;
+  transform: rotate(19.2deg);
+}
+.symbol_V #line5 {
+  width: 14.6%;
+  top: 52.2%;
+  right: 39.1%;
+  transform: rotate(-37.5deg);
+}
+.symbol_V #line6 {
+  width: 9.5%;
+  top: 35.55%;
+  right: 34.1%;
+  transform: rotate(83deg);
+}
+.symbol_V #line7 {
+  width: 9%;
+  top: 30.9%;
+  right: 41.8%;
+  transform: rotate(-35deg);
+}
+.symbol_V #line8 {
+  width: 14.7%;
+  top: 38%;
+  right: 55.9%;
+  transform: rotate(-8.5deg);
+}
+.symbol_V #line9 {
+  width: 9.5%;
+  top: 31.15%;
+  right: 66%;
+  transform: rotate(-67.2deg);
+}
+.symbol_V #line10 {
+  width: 13.5%;
+  top: 16.4%;
+  right: 52.16%;
+  transform: rotate(-28.2deg);
+}

@@ -1,0 +1,40 @@
+.symbol_II #explorer {
+  top: 16%;
+  right: 43%;
+}
+.symbol_II #wanderer {
+  top: 36%;
+  right: 66%;
+}
+.symbol_II #swamp {
+  top: 62.5%;
+  right: 52%;
+}
+.symbol_II #forest {
+  top: 44%;
+  right: 30%;
+}
+.symbol_II #line1 {
+  width: 19.5%;
+  top: 30.2%;
+  right: 48.4%;
+  transform: rotate(-36.8deg);
+}
+.symbol_II #line2 {
+  width: 17.5%;
+  top: 53.4%;
+  right: 53.8%;
+  transform: rotate(58.2deg);
+}
+.symbol_II #line3 {
+  width: 18%;
+  top: 57.4%;
+  right: 35.6%;
+  transform: rotate(-36.6deg);
+}
+.symbol_II #line4 {
+  width: 18%;
+  top: 34.1%;
+  right: 31.2%;
+  transform: rotate(61.8deg);
+}

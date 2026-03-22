@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.symbol_專精-VI #shade {
+  top: 63%;
+  right: 75%;
+}
+.symbol_專精-VI #greed {
+  top: 54%;
+  right: 44%;
+}
+.symbol_專精-VI #ganida {
+  top: 18%;
+  right: 40%;
+}
+.symbol_專精-VI #creek {
+  top: 66%;
+  right: 26%;
+}
+.symbol_專精-VI #line1 {
+  width: 23.5%;
+  top: 62.8%;
+  right: 51.7%;
+  transform: rotate(-13.6deg);
+}
+.symbol_專精-VI #line2 {
+  width: 22%;
+  top: 40.4%;
+  right: 35.2%;
+  transform: rotate(-83deg);
+}
+.symbol_專精-VI #line3 {
+  width: 12.3%;
+  top: 64.7%;
+  right: 33%;
+  transform: rotate(28.5deg);
+}

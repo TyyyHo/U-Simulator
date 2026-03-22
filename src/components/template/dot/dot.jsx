@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./dot.scss";
-import "./position/combine.scss";
+import "./dot.css";
+import "./position/combine.css";
 
 import { dotData } from "./dotData";
 

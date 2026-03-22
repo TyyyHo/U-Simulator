@@ -1,0 +1,841 @@
+@charset "UTF-8";
+.symbol_I #aphros {
+  top: 15%;
+  right: 45%;
+}
+.symbol_I #cliff {
+  top: 42%;
+  right: 35%;
+}
+.symbol_I #plains {
+  top: 68%;
+  right: 58%;
+}
+.symbol_I #line1 {
+  width: 16%;
+  top: 32.7%;
+  right: 35.8%;
+  transform: rotate(66.3deg);
+}
+.symbol_I #line2 {
+  width: 22%;
+  top: 59%;
+  right: 39%;
+  transform: rotate(-44.73deg);
+}
+.symbol_I #line3 {
+  width: 37%;
+  top: 45.5%;
+  right: 36.7%;
+  transform: rotate(-73.5deg);
+}
+
+.symbol_II #explorer {
+  top: 16%;
+  right: 43%;
+}
+.symbol_II #wanderer {
+  top: 36%;
+  right: 66%;
+}
+.symbol_II #swamp {
+  top: 62.5%;
+  right: 52%;
+}
+.symbol_II #forest {
+  top: 44%;
+  right: 30%;
+}
+.symbol_II #line1 {
+  width: 19.5%;
+  top: 30.2%;
+  right: 48.4%;
+  transform: rotate(-36.8deg);
+}
+.symbol_II #line2 {
+  width: 17.5%;
+  top: 53.4%;
+  right: 53.8%;
+  transform: rotate(58.2deg);
+}
+.symbol_II #line3 {
+  width: 18%;
+  top: 57.4%;
+  right: 35.6%;
+  transform: rotate(-36.6deg);
+}
+.symbol_II #line4 {
+  width: 18%;
+  top: 34.1%;
+  right: 31.2%;
+  transform: rotate(61.8deg);
+}
+
+.symbol_III #eunos {
+  top: 34%;
+  right: 66%;
+}
+.symbol_III #rock {
+  top: 22%;
+  right: 42%;
+}
+.symbol_III #gem {
+  top: 45%;
+  right: 33%;
+}
+.symbol_III #gold {
+  top: 68%;
+  right: 59%;
+}
+.symbol_III #line1 {
+  width: 17.8%;
+  top: 32%;
+  right: 48.72%;
+  transform: rotate(-23.6deg);
+}
+.symbol_III #line2 {
+  width: 12.7%;
+  top: 37.6%;
+  right: 34.8%;
+  transform: rotate(65.4deg);
+}
+.symbol_III #line3 {
+  width: 24%;
+  top: 60.5%;
+  right: 37.7%;
+  transform: rotate(-37.8deg);
+}
+.symbol_III #line4 {
+  width: 21%;
+  top: 55.2%;
+  right: 55.7%;
+  transform: rotate(76.2deg);
+}
+
+.symbol_IV #prele {
+  top: 77%;
+  right: 42%;
+}
+.symbol_IV #seed {
+  top: 55%;
+  right: 46%;
+}
+.symbol_IV #leaf {
+  top: 46.5%;
+  right: 66%;
+}
+.symbol_IV #petal {
+  top: 20%;
+  right: 64%;
+}
+.symbol_IV #stem {
+  top: 14%;
+  right: 43%;
+}
+.symbol_IV #root {
+  top: 35%;
+  right: 31%;
+}
+.symbol_IV #line1 {
+  width: 11%;
+  top: 70%;
+  right: 42.2%;
+  transform: rotate(77.2deg);
+}
+.symbol_IV #line2 {
+  width: 13%;
+  top: 55%;
+  right: 53.2%;
+  transform: rotate(21deg);
+}
+.symbol_IV #line3 {
+  width: 14%;
+  top: 37.4%;
+  right: 61.6%;
+  transform: rotate(-83.7deg);
+}
+.symbol_IV #line4 {
+  width: 13.4%;
+  top: 20.9%;
+  right: 50.4%;
+  transform: rotate(-14.1deg);
+}
+.symbol_IV #line5 {
+  width: 13%;
+  top: 28.5%;
+  right: 34.2%;
+  transform: rotate(56.7deg);
+}
+.symbol_IV #line6 {
+  width: 14.2%;
+  top: 49.1%;
+  right: 35.1%;
+  transform: rotate(-48deg);
+}
+
+.symbol_V .symbol, .symbol_V .symbolImg {
+  width: 35px;
+  height: 35px;
+}
+.symbol_V #constrast {
+  top: 57%;
+  right: 52%;
+}
+.symbol_V #flash {
+  top: 75.5%;
+  right: 56%;
+}
+.symbol_V #mist {
+  top: 65%;
+  right: 34%;
+}
+.symbol_V #hira {
+  top: 42%;
+  right: 35%;
+}
+.symbol_V #dewdrop {
+  top: 23%;
+  right: 37%;
+}
+.symbol_V #fruit {
+  top: 33%;
+  right: 50%;
+}
+.symbol_V #frost {
+  top: 37%;
+  right: 71%;
+}
+.symbol_V #lightning {
+  top: 19%;
+  right: 65%;
+}
+.symbol_V #rainbow {
+  top: 8%;
+  right: 47%;
+}
+.symbol_V #mine {
+  top: 81%;
+  right: 41%;
+}
+.symbol_V #line1 {
+  width: 9.7%;
+  top: 69.2%;
+  right: 51.9%;
+  transform: rotate(-75.4deg);
+}
+.symbol_V #line2 {
+  width: 12.5%;
+  top: 64%;
+  right: 39.5%;
+  transform: rotate(21.8deg);
+}
+.symbol_V #line3 {
+  width: 8.7%;
+  top: 76%;
+  right: 36%;
+  transform: rotate(-62.8deg);
+}
+.symbol_V #line4 {
+  width: 9.2%;
+  top: 81.3%;
+  right: 46.8%;
+  transform: rotate(19.2deg);
+}
+.symbol_V #line5 {
+  width: 14.6%;
+  top: 52.2%;
+  right: 39.1%;
+  transform: rotate(-37.5deg);
+}
+.symbol_V #line6 {
+  width: 9.5%;
+  top: 35.55%;
+  right: 34.1%;
+  transform: rotate(83deg);
+}
+.symbol_V #line7 {
+  width: 9%;
+  top: 30.9%;
+  right: 41.8%;
+  transform: rotate(-35deg);
+}
+.symbol_V #line8 {
+  width: 14.7%;
+  top: 38%;
+  right: 55.9%;
+  transform: rotate(-8.5deg);
+}
+.symbol_V #line9 {
+  width: 9.5%;
+  top: 31.15%;
+  right: 66%;
+  transform: rotate(-67.2deg);
+}
+.symbol_V #line10 {
+  width: 13.5%;
+  top: 16.4%;
+  right: 52.16%;
+  transform: rotate(-28.2deg);
+}
+
+.symbol_VI #nemera {
+  top: 52%;
+  right: 73%;
+}
+.symbol_VI #breath {
+  top: 26%;
+  right: 67%;
+}
+.symbol_VI #flow {
+  top: 23%;
+  right: 47%;
+}
+.symbol_VI #tri {
+  top: 43%;
+  right: 36%;
+}
+.symbol_VI #float {
+  top: 61%;
+  right: 34%;
+}
+.symbol_VI #cycle {
+  top: 81%;
+  right: 61%;
+}
+.symbol_VI #convection {
+  top: 45%;
+  right: 17%;
+}
+.symbol_VI #laughter {
+  top: 16.5%;
+  right: 20%;
+}
+.symbol_VI #line1 {
+  width: 14%;
+  top: 43.5%;
+  right: 67.3%;
+  transform: rotate(-74deg);
+}
+.symbol_VI #line2 {
+  width: 12%;
+  top: 28.25%;
+  right: 54.66%;
+  transform: rotate(-7.7deg);
+}
+.symbol_VI #line3 {
+  width: 11.7%;
+  top: 37.1%;
+  right: 39.4%;
+  transform: rotate(57.5deg);
+}
+.symbol_VI #line4 {
+  width: 6.8%;
+  top: 56.5%;
+  right: 35.8%;
+  transform: rotate(82.8deg);
+}
+.symbol_VI #line5 {
+  width: 23.3%;
+  top: 75%;
+  right: 39.5%;
+  transform: rotate(-32.5deg);
+}
+.symbol_VI #line6 {
+  width: 10.8%;
+  top: 48%;
+  right: 24.8%;
+  transform: rotate(5.7deg);
+}
+.symbol_VI #line7 {
+  width: 15.2%;
+  top: 34.8%;
+  right: 14.6%;
+  transform: rotate(83deg);
+}
+
+.symbol_VII .symbol, .symbol_VII .symbolImg {
+  width: 35px;
+  height: 35px;
+}
+.symbol_VII #dust {
+  top: 67%;
+  right: 83%;
+}
+.symbol_VII #scent {
+  top: 55%;
+  right: 63%;
+}
+.symbol_VII #stench {
+  top: 71%;
+  right: 52%;
+}
+.symbol_VII #ortemis {
+  top: 37%;
+  right: 51%;
+}
+.symbol_VII #air {
+  top: 50.5%;
+  right: 41.5%;
+}
+.symbol_VII #deadly-poison {
+  top: 22%;
+  right: 30%;
+}
+.symbol_VII #spider {
+  top: 33%;
+  right: 17.5%;
+}
+.symbol_VII #maggot {
+  top: 62%;
+  right: 27%;
+}
+.symbol_VII #line1 {
+  width: 15.8%;
+  top: 64%;
+  right: 67.9%;
+  transform: rotate(-28.2deg);
+}
+.symbol_VII #line2 {
+  width: 12.7%;
+  top: 49.1%;
+  right: 53.5%;
+  transform: rotate(-51.5deg);
+}
+.symbol_VII #line3 {
+  width: 17.8%;
+  top: 32.5%;
+  right: 34.5%;
+  transform: rotate(-32deg);
+}
+.symbol_VII #line4 {
+  width: 11%;
+  top: 66%;
+  right: 55%;
+  transform: rotate(51.5deg);
+}
+.symbol_VII #line5 {
+  width: 8.4%;
+  top: 46.8%;
+  right: 44.6%;
+  transform: rotate(50deg);
+}
+.symbol_VII #line6 {
+  width: 8.8%;
+  top: 30.4%;
+  right: 22%;
+  transform: rotate(37.5deg);
+}
+.symbol_VII #line7 {
+  width: 19.6%;
+  top: 50.6%;
+  right: 15.2%;
+  transform: rotate(-68.7deg);
+}
+
+.symbol_VIII .symbol, .symbol_VIII .symbolImg {
+  width: 35px;
+  height: 35px;
+}
+.symbol_VIII #decay {
+  top: 45%;
+  right: 14%;
+}
+.symbol_VIII #plague {
+  top: 59%;
+  right: 23%;
+}
+.symbol_VIII #laia {
+  top: 55%;
+  right: 41%;
+}
+.symbol_VIII #carpenter {
+  top: 32%;
+  right: 36%;
+}
+.symbol_VIII #farmer {
+  top: 20.5%;
+  right: 49%;
+}
+.symbol_VIII #hunter {
+  top: 26%;
+  right: 66%;
+}
+.symbol_VIII #shepherd {
+  top: 42%;
+  right: 54%;
+}
+.symbol_VIII #shadow {
+  top: 37%;
+  right: 79%;
+}
+.symbol_VIII #aurora {
+  top: 57.5%;
+  right: 75%;
+}
+.symbol_VIII #blacksmith {
+  top: 65%;
+  right: 61%;
+}
+.symbol_VIII #line1 {
+  width: 8.4%;
+  top: 55.2%;
+  right: 17%;
+  transform: rotate(-52.7deg);
+}
+.symbol_VIII #line2 {
+  width: 11.9%;
+  top: 60%;
+  right: 28.8%;
+  transform: rotate(11.4deg);
+}
+.symbol_VIII #line3 {
+  width: 10.5%;
+  top: 51.7%;
+  right: 45.1%;
+  transform: rotate(41deg);
+}
+.symbol_VIII #line4 {
+  width: 13.4%;
+  top: 46.7%;
+  right: 34.5%;
+  transform: rotate(-75.5deg);
+}
+.symbol_VIII #line5 {
+  width: 9.9%;
+  top: 29.4%;
+  right: 40.4%;
+  transform: rotate(38deg);
+}
+.symbol_VIII #line6 {
+  width: 12.2%;
+  top: 34.4%;
+  right: 48.2%;
+  transform: rotate(-74deg);
+}
+.symbol_VIII #line7 {
+  width: 11.2%;
+  top: 26.3%;
+  right: 54.66%;
+  transform: rotate(-16deg);
+}
+.symbol_VIII #line8 {
+  width: 19%;
+  top: 42.5%;
+  right: 59.7%;
+  transform: rotate(10.6deg);
+}
+.symbol_VIII #line9 {
+  width: 11.2%;
+  top: 50.4%;
+  right: 74.2%;
+  transform: rotate(77.52deg);
+}
+.symbol_VIII #line10 {
+  width: 9%;
+  top: 64.5%;
+  right: 66.4%;
+  transform: rotate(25.2deg);
+}
+
+.symbol_IX .symbol, .symbol_IX .symbolImg {
+  width: 35px;
+  height: 35px;
+}
+.symbol_IX #typhoon {
+  right: 40.3%;
+  top: 33.8%;
+}
+.symbol_IX #pleasure {
+  right: 37.8%;
+  top: 54.8%;
+}
+.symbol_IX #atmospheric-pressure {
+  right: 18.6%;
+  top: 61.2%;
+}
+.symbol_IX #mold {
+  right: 47.2%;
+  top: 71.3%;
+}
+.symbol_IX #minstrel {
+  right: 56.8%;
+  top: 47.7%;
+}
+.symbol_IX #forest-fire {
+  right: 60%;
+  top: 26.5%;
+}
+.symbol_IX #wave {
+  right: 65.6%;
+  top: 73.2%;
+}
+.symbol_IX #spike {
+  right: 73.9%;
+  top: 55.7%;
+}
+.symbol_IX #line1 {
+  left: 62.5%;
+  top: 61.2%;
+  width: 12%;
+  transform: rotate(15.4deg);
+}
+.symbol_IX #line2 {
+  left: 50%;
+  top: 66.2%;
+  width: 8.5%;
+  transform: rotate(-55.12deg);
+}
+.symbol_IX #line3 {
+  left: 35.1%;
+  top: 75.5%;
+  width: 10.7%;
+  transform: rotate(-4.76deg);
+}
+.symbol_IX #line4 {
+  left: 53%;
+  top: 47.7%;
+  width: 9.7%;
+  transform: rotate(81.42deg);
+}
+.symbol_IX #line5 {
+  left: 40.4%;
+  top: 33.5%;
+  width: 12.5%;
+  transform: rotate(17.33deg);
+}
+.symbol_IX #line6 {
+  left: 33.8%;
+  top: 40.3%;
+  width: 9.4%;
+  transform: rotate(80.17deg);
+}
+.symbol_IX #line7 {
+  left: 43.8%;
+  top: 54.5%;
+  width: 11.5%;
+  transform: rotate(17.43deg);
+}
+.symbol_IX #line8 {
+  left: 26.8%;
+  top: 55%;
+  width: 10%;
+  transform: rotate(-22deg);
+}
+
+.symbol_專精-I #steel {
+  top: 53.5%;
+  right: 24%;
+}
+.symbol_專精-I #sadness {
+  top: 50%;
+  right: 48%;
+}
+.symbol_專精-I #torch {
+  top: 44%;
+  right: 73%;
+}
+.symbol_專精-I #tipan {
+  top: 22%;
+  right: 53%;
+}
+.symbol_專精-I #line1 {
+  width: 15.9%;
+  top: 55.75%;
+  right: 31.7%;
+  transform: rotate(7deg);
+}
+.symbol_專精-I #line2 {
+  width: 17%;
+  top: 51.2%;
+  right: 55.6%;
+  transform: rotate(10.57deg);
+}
+.symbol_專精-I #line3 {
+  width: 15.3%;
+  top: 40.7%;
+  right: 47%;
+  transform: rotate(78deg);
+}
+
+.symbol_專精-II #hammer {
+  top: 53.5%;
+  right: 23%;
+}
+.symbol_專精-II #wrath {
+  top: 46%;
+  right: 47%;
+}
+.symbol_專精-II #bonfire {
+  top: 48%;
+  right: 72%;
+}
+.symbol_專精-II #flame {
+  top: 23%;
+  right: 61%;
+}
+.symbol_專精-II #line1 {
+  width: 16.7%;
+  top: 54%;
+  right: 30.3%;
+  transform: rotate(14.6deg);
+}
+.symbol_專精-II #line2 {
+  width: 16.5%;
+  top: 51.4%;
+  right: 55.5%;
+  transform: rotate(-3.6deg);
+}
+.symbol_專精-II #line3 {
+  width: 15.7%;
+  top: 38.8%;
+  right: 49.9%;
+  transform: rotate(53.85deg);
+}
+
+.symbol_專精-III #darkness {
+  top: 70%;
+  right: 35%;
+}
+.symbol_專精-III #stra {
+  top: 42%;
+  right: 46%;
+}
+.symbol_專精-III #fisherman {
+  top: 30%;
+  right: 68%;
+}
+.symbol_專精-III #sailboat {
+  top: 15%;
+  right: 38%;
+}
+.symbol_專精-III #line1 {
+  width: 17.5%;
+  top: 60.2%;
+  right: 35.6%;
+  transform: rotate(64.76deg);
+}
+.symbol_專精-III #line2 {
+  width: 16%;
+  top: 40.4%;
+  right: 52.65%;
+  transform: rotate(24.44deg);
+}
+.symbol_專精-III #line3 {
+  width: 15.8%;
+  top: 32.7%;
+  right: 37.5%;
+  transform: rotate(-70.43deg);
+}
+
+.symbol_專精-IV #brilliance {
+  top: 69%;
+  right: 58%;
+  z-index: 1;
+}
+.symbol_專精-IV #vacuum {
+  top: 40%;
+  right: 48%;
+  z-index: 1;
+}
+.symbol_專精-IV #waterfall {
+  top: 16%;
+  right: 59%;
+  z-index: 1;
+}
+.symbol_專精-IV #pirate {
+  top: 28%;
+  right: 29%;
+  z-index: 1;
+}
+.symbol_專精-IV #line1 {
+  width: 17.7%;
+  top: 59.2%;
+  right: 48.5%;
+  transform: rotate(-67deg);
+}
+.symbol_專精-IV #line2 {
+  width: 14.8%;
+  top: 32.3%;
+  right: 49.7%;
+  transform: rotate(61.2deg);
+}
+.symbol_專精-IV #line3 {
+  width: 13%;
+  top: 38.3%;
+  right: 36.2%;
+  transform: rotate(-28.5deg);
+}
+
+.symbol_專精-V #caspol {
+  top: 70%;
+  right: 63%;
+  z-index: 1;
+}
+.symbol_專精-V #regret {
+  top: 45%;
+  right: 48%;
+  z-index: 1;
+}
+.symbol_專精-V #lamp {
+  top: 12%;
+  right: 55%;
+  z-index: 1;
+}
+.symbol_專精-V #brazier {
+  top: 31%;
+  right: 28%;
+  z-index: 1;
+}
+.symbol_專精-V #line1 {
+  width: 17.4%;
+  top: 62.2%;
+  right: 50.7%;
+  transform: rotate(-54.25deg);
+}
+.symbol_專精-V #line2 {
+  width: 20%;
+  top: 33%;
+  right: 45.6%;
+  transform: rotate(76deg);
+}
+.symbol_專精-V #line3 {
+  width: 14.5%;
+  top: 42.5%;
+  right: 35%;
+  transform: rotate(-31.5deg);
+}
+
+.symbol_專精-VI #shade {
+  top: 63%;
+  right: 75%;
+}
+.symbol_專精-VI #greed {
+  top: 54%;
+  right: 44%;
+}
+.symbol_專精-VI #ganida {
+  top: 18%;
+  right: 40%;
+}
+.symbol_專精-VI #creek {
+  top: 66%;
+  right: 26%;
+}
+.symbol_專精-VI #line1 {
+  width: 23.5%;
+  top: 62.8%;
+  right: 51.7%;
+  transform: rotate(-13.6deg);
+}
+.symbol_專精-VI #line2 {
+  width: 22%;
+  top: 40.4%;
+  right: 35.2%;
+  transform: rotate(-83deg);
+}
+.symbol_專精-VI #line3 {
+  width: 12.3%;
+  top: 64.7%;
+  right: 33%;
+  transform: rotate(28.5deg);
+}

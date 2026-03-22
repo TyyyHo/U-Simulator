@@ -1,0 +1,80 @@
+.dot_cliff #dot1 {
+  top: 38%;
+  right: 72%;
+}
+.dot_cliff #dot2 {
+  top: 48%;
+  right: 60%;
+}
+.dot_cliff #dot3 {
+  top: 27%;
+  right: 48%;
+}
+.dot_cliff #dot4 {
+  top: 24%;
+  right: 29%;
+}
+.dot_cliff #dot5 {
+  top: 45%;
+  right: 19%;
+}
+.dot_cliff #dot6 {
+  top: 65%;
+  right: 79%;
+}
+.dot_cliff #dot7 {
+  top: 44%;
+  right: 37%;
+}
+.dot_cliff #dot8 {
+  top: 64%;
+  right: 30%;
+}
+.dot_cliff #line1 {
+  width: 14%;
+  top: 46.2%;
+  right: 64%;
+  transform: rotate(29deg);
+}
+.dot_cliff #line2 {
+  width: 18%;
+  top: 40.5%;
+  right: 51.5%;
+  transform: rotate(-49.5deg);
+}
+.dot_cliff #line3 {
+  width: 17.5%;
+  top: 27.5%;
+  right: 35.5%;
+  transform: rotate(-6deg);
+}
+.dot_cliff #line4 {
+  width: 17%;
+  top: 35%;
+  right: 22.5%;
+  transform: rotate(55.2deg);
+}
+.dot_cliff #line5 {
+  width: 18%;
+  top: 54%;
+  right: 72.7%;
+  transform: rotate(-68.5deg);
+}
+.dot_cliff #line6 {
+  width: 44%;
+  top: 56.6%;
+  right: 42%;
+  transform: rotate(-18.5deg);
+}
+.dot_cliff #line7 {
+  width: 14%;
+  top: 57%;
+  right: 32.4%;
+  transform: rotate(62.5deg);
+}
+.dot_cliff #line8 {
+  width: 15%;
+  top: 57%;
+  right: 23.3%;
+  transform: rotate(-49deg);
+}

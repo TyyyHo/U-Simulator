@@ -1,6 +1,6 @@
 import React from "react";
-import "./specializationList.scss";
-import "./specializationList_mobile.scss";
+import "./specializationList.css";
+import "./specializationList_mobile.css";
 
 import { SpSymbolData } from "../template/symbol/data/SpSymbolData";
 

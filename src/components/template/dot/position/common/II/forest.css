@@ -1,0 +1,96 @@
+.dot_forest #dot1 {
+  top: 54%;
+  right: 75%;
+}
+.dot_forest #dot2 {
+  top: 34%;
+  right: 63%;
+}
+.dot_forest #dot3 {
+  top: 26%;
+  right: 45%;
+}
+.dot_forest #dot4 {
+  top: 30%;
+  right: 26%;
+}
+.dot_forest #dot5 {
+  top: 23%;
+  right: 8%;
+}
+.dot_forest #dot6 {
+  top: 62%;
+  right: 54%;
+}
+.dot_forest #dot7 {
+  top: 60%;
+  right: 36%;
+}
+.dot_forest #dot8 {
+  top: 50%;
+  right: 20%;
+}
+.dot_forest #dot9 {
+  top: 45%;
+  right: 42%;
+}
+.dot_forest #line1 {
+  width: 17%;
+  top: 45.5%;
+  right: 66.3%;
+  transform: rotate(-48deg);
+}
+.dot_forest #line2 {
+  width: 18%;
+  top: 32%;
+  right: 51.3%;
+  transform: rotate(-17deg);
+}
+.dot_forest #line3 {
+  width: 19%;
+  top: 30%;
+  right: 32.5%;
+  transform: rotate(8.5deg);
+}
+.dot_forest #line4 {
+  width: 18%;
+  top: 28.8%;
+  right: 15%;
+  transform: rotate(-15deg);
+}
+.dot_forest #line5 {
+  width: 20%;
+  top: 59.8%;
+  right: 61%;
+  transform: rotate(14.5deg);
+}
+.dot_forest #line6 {
+  width: 18%;
+  top: 62.8%;
+  right: 42%;
+  transform: rotate(-4.5deg);
+}
+.dot_forest #line7 {
+  width: 18%;
+  top: 57%;
+  right: 25%;
+  transform: rotate(-23deg);
+}
+.dot_forest #line8 {
+  width: 22%;
+  top: 38%;
+  right: 9.1%;
+  transform: rotate(-56deg);
+}
+.dot_forest #line9 {
+  width: 11%;
+  top: 54%;
+  right: 40.3%;
+  transform: rotate(58.5deg);
+}
+.dot_forest #line10 {
+  width: 13%;
+  top: 37%;
+  right: 43.6%;
+  transform: rotate(76.5deg);
+}

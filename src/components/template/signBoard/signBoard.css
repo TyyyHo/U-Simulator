@@ -1,0 +1,44 @@
+#signBoard {
+  height: 40px;
+  width: 310px;
+  position: absolute;
+  top: 0;
+  color: black;
+}
+#signBoard .content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 310px;
+  font-size: x-large;
+  font-weight: 700;
+}
+#signBoard #triangleL {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 40px 0;
+  border-color: transparent #FFC847 transparent transparent;
+}
+#signBoard #rectangle {
+  z-index: 0;
+  position: absolute;
+  top: -16px;
+  left: 27px;
+  width: 256.5px;
+  height: 62px;
+  border-radius: 16px;
+  background-color: #FFC847;
+}
+#signBoard #triangleR {
+  left: 281px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 30px 0 0px;
+  border-color: #FFC847 transparent transparent transparent;
+}

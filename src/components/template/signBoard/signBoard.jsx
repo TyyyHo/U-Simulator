@@ -1,5 +1,5 @@
 import React from "react";
-import "./signBoard.scss";
+import "./signBoard.css";
 
 import { dotData } from "../dot/dotData";
 

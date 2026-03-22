@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.symbol_專精-V #caspol {
+  top: 70%;
+  right: 63%;
+  z-index: 1;
+}
+.symbol_專精-V #regret {
+  top: 45%;
+  right: 48%;
+  z-index: 1;
+}
+.symbol_專精-V #lamp {
+  top: 12%;
+  right: 55%;
+  z-index: 1;
+}
+.symbol_專精-V #brazier {
+  top: 31%;
+  right: 28%;
+  z-index: 1;
+}
+.symbol_專精-V #line1 {
+  width: 17.4%;
+  top: 62.2%;
+  right: 50.7%;
+  transform: rotate(-54.25deg);
+}
+.symbol_專精-V #line2 {
+  width: 20%;
+  top: 33%;
+  right: 45.6%;
+  transform: rotate(76deg);
+}
+.symbol_專精-V #line3 {
+  width: 14.5%;
+  top: 42.5%;
+  right: 35%;
+  transform: rotate(-31.5deg);
+}

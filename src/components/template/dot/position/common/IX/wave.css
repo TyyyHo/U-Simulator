@@ -1,0 +1,251 @@
+.dot_wave .dot .text_container .text {
+  padding: 0 13px;
+  font-size: 12px;
+}
+.dot_wave .dotImg {
+  height: 30px;
+}
+.dot_wave #dot1 {
+  right: 43.8%;
+  top: 54.4%;
+}
+.dot_wave #dot2 {
+  right: 51.8%;
+  top: 45.8%;
+}
+.dot_wave #dot3 {
+  right: 62.4%;
+  top: 35.5%;
+}
+.dot_wave #dot4 {
+  right: 74.5%;
+  top: 40.4%;
+}
+.dot_wave #dot5 {
+  right: 86.2%;
+  top: 35.5%;
+}
+.dot_wave #dot6 {
+  right: 53%;
+  top: 56.5%;
+}
+.dot_wave #dot7 {
+  right: 63.3%;
+  top: 52.1%;
+}
+.dot_wave #dot8 {
+  right: 76.4%;
+  top: 51.1%;
+}
+.dot_wave #dot9 {
+  right: 89%;
+  top: 54.3%;
+}
+.dot_wave #dot10 {
+  right: 40.5%;
+  top: 69%;
+}
+.dot_wave #dot11 {
+  right: 53%;
+  top: 70.3%;
+}
+.dot_wave #dot12 {
+  right: 67.9%;
+  top: 66.4%;
+}
+.dot_wave #dot13 {
+  right: 82%;
+  top: 69%;
+}
+.dot_wave #dot14 {
+  right: 47.3%;
+  top: 39.5%;
+}
+.dot_wave #dot15 {
+  right: 31.1%;
+  top: 35.5%;
+}
+.dot_wave #dot16 {
+  right: 16.3%;
+  top: 37.4%;
+}
+.dot_wave #dot17 {
+  right: 3.7%;
+  top: 35.5%;
+}
+.dot_wave #dot18 {
+  right: 36.4%;
+  top: 47.5%;
+}
+.dot_wave #dot19 {
+  right: 23.9%;
+  top: 49.9%;
+}
+.dot_wave #dot20 {
+  right: 12%;
+  top: 52.3%;
+}
+.dot_wave #dot21 {
+  right: 0.3%;
+  top: 52%;
+}
+.dot_wave #dot22 {
+  right: 33.2%;
+  top: 59.6%;
+}
+.dot_wave #dot23 {
+  right: 20.3%;
+  top: 65.6%;
+}
+.dot_wave #dot24 {
+  right: 9.1%;
+  top: 71.1%;
+}
+.dot_wave #dot25 {
+  right: -1.8%;
+  top: 67.6%;
+}
+.dot_wave #line1 {
+  left: 40.7%;
+  top: 51.7%;
+  width: 9.9%;
+  transform: rotate(35.71deg);
+}
+.dot_wave #line2 {
+  left: 30.1%;
+  top: 42.3%;
+  width: 12.6%;
+  transform: rotate(32.85deg);
+}
+.dot_wave #line3 {
+  left: 18.8%;
+  top: 39.6%;
+  width: 12.5%;
+  transform: rotate(-15.05deg);
+}
+.dot_wave #line4 {
+  left: 7.1%;
+  top: 39.6%;
+  width: 12.1%;
+  transform: rotate(15.57deg);
+}
+.dot_wave #line5 {
+  left: 40.4%;
+  top: 57.1%;
+  width: 9.3%;
+  transform: rotate(-8.79deg);
+}
+.dot_wave #line6 {
+  left: 30%;
+  top: 55.9%;
+  width: 10.6%;
+  transform: rotate(16.01deg);
+}
+.dot_wave #line7 {
+  left: 17.1%;
+  top: 53.3%;
+  width: 13.2%;
+  transform: rotate(2.9deg);
+}
+.dot_wave #line8 {
+  left: 4.4%;
+  top: 54.3%;
+  width: 12.8%;
+  transform: rotate(-9.4deg);
+}
+.dot_wave #line9 {
+  left: 46.2%;
+  top: 63.3%;
+  width: 10.3%;
+  transform: rotate(71.13deg);
+}
+.dot_wave #line10 {
+  left: 40.5%;
+  top: 71.3%;
+  width: 12.5%;
+  transform: rotate(-3.81deg);
+}
+.dot_wave #line11 {
+  left: 25.5%;
+  top: 69.9%;
+  width: 15.1%;
+  transform: rotate(9.83deg);
+}
+.dot_wave #line12 {
+  left: 11.4%;
+  top: 69.3%;
+  width: 14.1%;
+  transform: rotate(-7.13deg);
+}
+.dot_wave #line13 {
+  left: 42.7%;
+  top: 48.6%;
+  width: 10.5%;
+  transform: rotate(70.99deg);
+}
+.dot_wave #line14 {
+  left: 46.1%;
+  top: 39.1%;
+  width: 16.4%;
+  transform: rotate(-9.37deg);
+}
+.dot_wave #line15 {
+  left: 62.4%;
+  top: 38.1%;
+  width: 14.9%;
+  transform: rotate(4.82deg);
+}
+.dot_wave #line16 {
+  left: 77.2%;
+  top: 38.1%;
+  width: 12.6%;
+  transform: rotate(-5.67deg);
+}
+.dot_wave #line17 {
+  left: 49%;
+  top: 52.6%;
+  width: 8.7%;
+  transform: rotate(-31.72deg);
+}
+.dot_wave #line18 {
+  left: 57%;
+  top: 50.3%;
+  width: 12.6%;
+  transform: rotate(7.22deg);
+}
+.dot_wave #line19 {
+  left: 69.5%;
+  top: 52.7%;
+  width: 12%;
+  transform: rotate(7.57deg);
+}
+.dot_wave #line20 {
+  left: 81.5%;
+  top: 53.8%;
+  width: 11.7%;
+  transform: rotate(-0.82deg);
+}
+.dot_wave #line21 {
+  left: 49.4%;
+  top: 58.6%;
+  width: 11.2%;
+  transform: rotate(18.17deg);
+}
+.dot_wave #line22 {
+  left: 60%;
+  top: 64.3%;
+  width: 13.4%;
+  transform: rotate(17.31deg);
+}
+.dot_wave #line23 {
+  left: 72.9%;
+  top: 70%;
+  width: 11.8%;
+  transform: rotate(18.05deg);
+}
+.dot_wave #line24 {
+  left: 84.3%;
+  top: 71%;
+  width: 11.1%;
+  transform: rotate(-12.15deg);
+}

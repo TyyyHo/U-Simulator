@@ -1,0 +1,43 @@
+.spContainer {
+  position: fixed;
+  margin-bottom: 4px;
+  bottom: 42px;
+  width: 60%;
+  margin-left: 20%;
+}
+.spContainer .specializationList {
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../../../public/img/listBg/listBg.webp);
+  background-size: 50%;
+  font-size: larger;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.spContainer .specializationList div:first-child {
+  border-left: 2px solid;
+  border-color: black;
+}
+.spContainer .specializationList .specializationOption {
+  border-right: 2px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: black;
+  width: 16.6%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+}
+.spContainer .specializationList .available {
+  cursor: pointer;
+  color: black;
+}
+.spContainer .specializationList .available:hover span {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.1s;
+}

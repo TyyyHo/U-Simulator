@@ -1,5 +1,5 @@
 import React from "react";
-import "./returnBtn.scss";
+import "./returnBtn.css";
 
 import { dotData } from "../dot/dotData";
 import { ReactComponent as Arrow } from "./returnArrow.svg";

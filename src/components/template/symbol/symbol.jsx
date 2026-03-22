@@ -1,6 +1,6 @@
 import React from "react";
-import "./symbol.scss";
-import "./position/combine.scss";
+import "./symbol.css";
+import "./position/combine.css";
 
 import { symbolData } from "./data/combineSymbolData";
 import { dotData } from "../dot/dotData";
