@@ -75,11 +75,11 @@ function Simulator({
     });
 
     // set counter
-    let arrForCount = Object.values(importDotState);
+    let arrForCount = Object.values(importDotState) as any[];
     let count = 0;
     let spCount = 0;
-    arrForCount.forEach((element) => {
-      Object.values(element).forEach((e) => {
+    arrForCount.forEach((element: any) => {
+      Object.values(element).forEach((e: any) => {
         if (e === true) {
           count += 1;
 

@@ -6,11 +6,10 @@ import "../shared/listBase_mobile.css";
 import { commonSymbolData } from "../template/symbol/data/commonSymbolData";
 
 const CommonList = ({ setTemplate, zodiacPoints, setAlertMsg }) => {
-  const commonId = Object.keys(commonSymbolData);
-  const commonOption = Object.values(commonSymbolData);
-  commonId.forEach((element, index) => {
-    commonOption[index].id = element;
-  });
+  const commonOption = Object.entries(commonSymbolData).map(([id, option]) => ({
+    ...option,
+    id,
+  }));
 
   function commonRule(limit) {
     return zodiacPoints >= limit ? "available" : null;
